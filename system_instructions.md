@@ -7,3 +7,5 @@ date: [YYYY-MM-DD]
 tags: [tag1, tag2, tag3]
 ---
 Setze danach den Text. Nutze Admonitions (z.B. !!! info "Tipp") für wichtige Erkenntnisse.
+
+WICHTIGE REGEL FÜR MEDIEN: Wenn in /RAW Bilder, PDFs oder andere Dateianhänge liegen, verschiebe diese IMMER in den Ordner /Assets. Referenziere sie im Wiki-Markdown über relative Pfade (z.B. `![Bildbeschreibung](../Assets/bildname.jpg)`).

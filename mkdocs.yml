@@ -13,6 +13,8 @@ theme:
         name: Switch to light mode
 plugins:
   - search
+  - tags
+  - roamlinks
 markdown_extensions:
   - meta
   - admonition

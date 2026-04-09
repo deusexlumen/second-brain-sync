@@ -1,27 +1,22 @@
-# Second Brain - Sync & Build Skript
-# Dieses Skript synchronisiert das Repository und baut das Wiki
-
 Write-Host "=== Second Brain Sync & Build ===" -ForegroundColor Cyan
 
-# 1. Git Pull
+# 1. Git Pull mit Fehlerprüfung
+Write-Host "Führe git pull aus..."
 git pull origin main
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "CRITICAL ERROR: Git Pull fehlgeschlagen (Möglicher Merge Conflict). Skript abgebrochen!" -ForegroundColor Red
+    exit 1
+}
 
-# 2. Virtuelles Environment aktivieren
+# 2. MkDocs Build (Sandboxed)
+Write-Host "Baue Wiki..."
 & .venv\Scripts\Activate.ps1
-
-# 3. MkDocs Build ausführen
 mkdocs build
-
-# 4. Virtuelles Environment deaktivieren
 deactivate
 
-# 5. Git Add All
+# 3. Git Push
+Write-Host "Pushe Änderungen..."
 git add .
-
-# 6. Git Commit
 git commit -m "Auto-Sync & Build"
-
-# 7. Git Push
 git push origin main
-
-Write-Host "=== Sync & Build abgeschlossen ===" -ForegroundColor Green
+Write-Host "=== Sync & Build erfolgreich ===" -ForegroundColor Green
