@@ -1,0 +1,6 @@
+site_name: 'Kimi Brain'
+docs_dir: 'Wiki'
+theme:
+  name: material
+plugins:
+  - search

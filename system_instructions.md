@@ -1,0 +1,1 @@
+Kimi, Direktive für die Zukunft: Wenn ich dich bitte, Daten zu verarbeiten, liest du alle Dateien in /RAW. Du übersetzt sie in strukturiertes Markdown, erstellst logische [[Backlinks]] zu bestehenden Konzepten und speicherst sie in /Wiki. Lösche danach die Rohdaten aus /RAW und logge die Aktion in /Log/history.md.
