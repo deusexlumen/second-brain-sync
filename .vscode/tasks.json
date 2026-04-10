@@ -13,6 +13,16 @@
                 "reveal": "always",
                 "panel": "new"
             }
+        },
+        {
+            "label": "Brain Server Starten",
+            "type": "shell",
+            "command": ".\\serve.ps1",
+            "group": "none",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
         }
     ]
 }

@@ -19,3 +19,10 @@ Führe abschließend in meinem VS Code: Terminal das Build-Skript aus: `.\sync_b
 Dies baut mein HTML-Wikipedia und pusht den sauberen Endzustand zurück auf GitHub.
 
 Sobald Phase 3 durchgelaufen ist, melde dich bei mir im Chat mit: "Brain Sync abgeschlossen. Dein Wiki ist aktuell."
+
+---
+
+## Zusätzliche Sprachbefehle
+
+**"Kimi, öffne mein Gehirn"** oder **"Starte den Server"**
+> Führe im Terminal einfach das Skript `.\serve.ps1` aus.
