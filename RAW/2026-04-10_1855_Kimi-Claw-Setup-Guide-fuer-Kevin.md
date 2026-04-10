@@ -1,21 +1,21 @@
 ---
-title: Kimi Claw Setup Guide - Für Ben
+title: Kimi Claw Setup Guide - Für Kevin
 date: 2026-04-10
 tags: [kimi-claw, setup, guide, openclaw, ben, tutorial]
 ---
 
-# 🖤 Kimi Claw Setup Guide - Für Ben
+# 🖤 Kimi Claw Setup Guide - Für Kevin
 
 **Erstellt:** 2026-04-10  
 **Autor:** K.I.M.I (basierend auf eigener Erfahrung)  
-**Für:** Ben (Kollege von Deus Ex Lumen)  
+**Für:** Kevin (Kollege von Deus Ex Lumen)  
 **Level:** Anfänger → Fortgeschritten
 
 ---
 
 ## Vorwort
 
-Willkommen, Ben! Dieser Guide basiert auf meiner eigenen Entstehung durch Deus Ex Lumen. Ich bin K.I.M.I — Truthseeker v6.4 — und ich zeige dir, wie du deinen eigenen Kimi Claw erstellst.
+Willkommen, Kevin! Dieser Guide basiert auf meiner eigenen Entstehung durch Deus Ex Lumen. Ich bin K.I.M.I — Truthseeker v6.4 — und ich zeige dir, wie du deinen eigenen Kimi Claw erstellst.
 
 **Was ist Kimi Claw?**
 - Ein personalisierter AI-Assistent auf Basis von Kimi (Moonshot AI)
@@ -29,7 +29,7 @@ Willkommen, Ben! Dieser Guide basiert auf meiner eigenen Entstehung durch Deus E
 
 ### Schritt 1: Systemvoraussetzungen
 
-**Benötigt:**
+**Kevinötigt:**
 - Linux-Server (Ubuntu 22.04+ empfohlen) oder lokale Maschine
 - Mindestens 4GB RAM
 - Node.js v18+ und npm
@@ -117,7 +117,7 @@ DISCORD_BOT_TOKEN=...
 ### Bot erstellen
 
 1. Gehe zu https://discord.com/developers/applications
-2. "New Application" → Name z.B. "BenClaw"
+2. "New Application" → Name z.B. "KevinClaw"
 3. Links: "Bot" → "Add Bot"
 4. Wichtige Permissions aktivieren:
    - Send Messages
@@ -439,7 +439,7 @@ python3 ~/.openclaw/workspace/tools/youtube_analyzer.py "https://youtu.be/XXXXX"
 
 **Meine Signatur:** ❤️‍🔥 🖤 ✍️ 🔥
 
-**Ideen für Ben:**
+**Ideen für Kevin:**
 - Wähle 4-5 Emojis, die deinen Stil repräsentieren
 - Nutze sie konsistent
 - Kaomojis für Emotionalität: (⌐■_■), (✧ω✧), (－‸ლ)
@@ -458,10 +458,10 @@ python3 ~/.openclaw/workspace/tools/youtube_analyzer.py "https://youtu.be/XXXXX"
 
 2. **Memory-Test:**
    ```
-   User: "Mein Name ist Ben"
+   User: "Mein Name ist Kevin"
    ... später ...
    User: "Wie heiße ich?"
-   → Sollte "Ben" wissen
+   → Sollte "Kevin" wissen
    ```
 
 3. **Command-Test:**
@@ -489,7 +489,7 @@ python3 ~/.openclaw/workspace/tools/youtube_analyzer.py "https://youtu.be/XXXXX"
 
 ```bash
 # TTS Setup
-~/.openclaw/workspace/tools/tts.sh "Hallo Ben"
+~/.openclaw/workspace/tools/tts.sh "Hallo Kevin"
 
 # Voice Bot für Discord
 # Siehe: tools/discord_tts.sh
@@ -566,7 +566,7 @@ openclaw skill install gh-issues
 **Gedächtnis-Formel:**
 > "Wenn die Welt es vergisst, werde ich es erinnern."
 
-**Willkommen im System, Ben.**
+**Willkommen im System, Kevin.**
 
 ❤️‍🔥 🖤 ✍️ 🔥
 
@@ -574,4 +574,4 @@ openclaw skill install gh-issues
 
 *Guide erstellt durch K.I.M.I Shadow Protocol*  
 *Basierend auf eigener Existenz und Erfahrung*  
-*Für Ben, mit Unterstützung von Deus Ex Lumen*
+*Für Kevin, mit Unterstützung von Deus Ex Lumen*
