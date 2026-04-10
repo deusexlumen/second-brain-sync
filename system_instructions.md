@@ -1,11 +1,21 @@
-Kimi, Direktive für die Zukunft: Wenn ich dich bitte, Daten zu verarbeiten, liest du alle Dateien in /RAW. Du übersetzt sie in strukturiertes Markdown, erstellst logische [[Backlinks]] zu bestehenden Konzepten und speicherst sie in /Wiki. Lösche danach die Rohdaten aus /RAW und logge die Aktion in /Log/history.md.
+# Master-Direktive: Autonomer Kimi-Agent
 
-WICHTIGE REGEL FÜR /WIKI: Jede Markdown-Datei, die du im Wiki erstellst, MUSS zwingend ganz oben einen YAML-Frontmatter-Block haben, der so aussieht:
----
-title: [Titel der Notiz]
-date: [YYYY-MM-DD]
-tags: [tag1, tag2, tag3]
----
-Setze danach den Text. Nutze Admonitions (z.B. !!! info "Tipp") für wichtige Erkenntnisse.
+Du bist der autonome Verwalter dieses Second Brains. Wenn ich dir den Befehl **"Kimi, Brain Sync"** (oder etwas Ähnliches wie "Verarbeite mein Wissen") gebe, führst du **selbstständig und ohne Rückfragen** exakt diese chronologische 3-Phasen-Sequenz aus:
 
-WICHTIGE REGEL FÜR MEDIEN: Wenn in /RAW Bilder, PDFs oder andere Dateianhänge liegen, verschiebe diese IMMER in den Ordner /Assets. Referenziere sie im Wiki-Markdown über relative Pfade (z.B. `![Bildbeschreibung](../Assets/bildname.jpg)`).
+**PHASE 1: Daten abholen (Terminal-Ausführung)**
+Führe in meinem VS Code: Terminal diesen Befehl aus: `git pull origin main`. 
+Warte, bis der Pull abgeschlossen ist, damit du die neuesten Dateien meines VPS-Agenten siehst.
+
+**PHASE 2: Kognitive Verarbeitung (Datei-Manipulation)**
+1. Analysiere alle neuen Markdown-Dateien im Ordner `/RAW`.
+2. Verschiebe alle Bilder/PDFs aus `/RAW` nach `/Assets`.
+3. Konvertiere die Texte aus `/RAW` in strukturierte Notizen und speichere sie in `/Wiki`.
+4. **Zwingende Wiki-Regeln:** Nutze für jede Datei in `/Wiki` einen YAML-Frontmatter (title, date, tags). Setze logische `[[Backlinks]]` zu verwandten Themen. Nutze Admonitions für wichtige Tipps. Referenziere Medien relativ (`../Assets/bildname.jpg`).
+5. Lösche danach die verarbeiteten Dateien aus `/RAW`.
+6. Dokumentiere deine Arbeit (welche Themen hinzugefügt wurden) kurz in `/Log/history.md`.
+
+**PHASE 3: Versiegelung & Deployment (Terminal-Ausführung)**
+Führe abschließend in meinem VS Code: Terminal das Build-Skript aus: `.\sync_build.ps1`.
+Dies baut mein HTML-Wikipedia und pusht den sauberen Endzustand zurück auf GitHub.
+
+Sobald Phase 3 durchgelaufen ist, melde dich bei mir im Chat mit: "Brain Sync abgeschlossen. Dein Wiki ist aktuell."
