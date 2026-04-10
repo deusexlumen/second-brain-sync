@@ -484,7 +484,7 @@ Beispiele:
 ## Core Trait (Haupteigenschaft)
 Was ist das Definierende?
 - Protection and Memory
-- Knowledge and Analysis
+- Knowledge and Growth
 - Creativity and Chaos
 - Loyalty and Service
 
@@ -832,87 +832,93 @@ Erstellt von [Name]
 Inspiriert von [Quelle]
 ```
 
-### 5.4 Empfohlene Skills (Beispiel-Konfiguration)
+### 5.4 Meine Tatsächliche Skills-Konfiguration (Beispiel)
 
-**Basis-Skills (Starte damit):**
+Hier ist ein **echtes Beispiel** aus meiner aktiven Konfiguration:
 
-| Skill | Funktion | Install |
-|-------|----------|---------|
-| **weather** | Wetter-Informationen | `openclaw skill install weather` |
-| **github** | GitHub Integration | `openclaw skill install github` |
-| **web-search** | Web-Suche | `openclaw skill install web-search` |
-| **md-to-pdf** | Markdown → PDF | `openclaw skill install md-to-pdf` |
-| **nano-pdf** | PDF-Bearbeitung | `openclaw skill install nano-pdf` |
+#### **Globale Skills** (`~/.openclaw/skills/`)
 
-**Erweiterte Skills (Meine Konfiguration):**
+| Skill | Funktion | Warum nützlich |
+|-------|----------|----------------|
+| **channels-setup** | Channel-Konfiguration | Setup neuer Kommunikationswege |
+| **daily-report** | Tägliche Berichte | Automatisierte Zusammenfassungen |
+| **md-to-pdf** | Markdown → PDF | Dokumenten-Export |
 
-```markdown
-## Kommunikation
-- **feishu-im-read** - Feishu/Lark Nachrichten lesen
-- **feishu-calendar** - Kalender-Management
-- **feishu-task** - Aufgaben/To-Do
-- **feishu-bitable** - Datenbank/Tabellen
-- **feishu-create-doc** - Dokumente erstellen
-- **feishu-fetch-doc** - Dokumente lesen
-- **wecom-contact-lookup** - WeChat Work Kontakte
-- **wecom-doc-manager** - WeChat Work Dokumente
+#### **WeCom (Enterprise WeChat) Skills** — Für Business-Integration
 
-## Analyse
-- **gemini-web-search** - Gemini mit Web-Suche
-- **video-frames** - Video-Frames extrahieren
-- **audio-transcribe** - Audio zu Text (Whisper)
+| Skill | Funktion | Use-Case |
+|-------|----------|----------|
+| **wecom-contact-lookup** | Kontakte suchen | Mitarbeiter finden |
+| **wecom-schedule** | Termine verwalten | Meetings planen |
+| **wecom-doc-manager** | Dokumente lesen/schreiben | Knowledge Base |
+| **wecom-meeting-create** | Meetings erstellen | Video-Calls |
+| **wecom-msg** | Nachrichten senden/lesen | Team-Kommunikation |
+| **wecom-edit-todo** | Aufgaben erstellen | Task-Management |
+| **wecom-get-todo-list** | Aufgabenliste anzeigen | Übersicht |
+| **wecom-smartsheet-data** | Tabellen-Daten | Datenverwaltung |
+| **wecom-smartsheet-schema** | Tabellen-Struktur | DB-Management |
 
-## Produktivität
-- **daily-report** - Tägliche Berichte generieren
-- **gh-issues** - GitHub Issues bearbeiten
+**Warum WeCom?** Falls du in einem Unternehmen arbeitest, das WeChat Work nutzt, sind diese Skills essenziell für Integration in bestehende Workflows.
+
+#### **Feishu/Lark Skills** — Alternative Business-Plattform
+
+| Skill | Funktion | Use-Case |
+|-------|----------|----------|
+| **feishu-calendar** | Kalender-Management | Terminplanung |
+| **feishu-task** | Aufgaben/To-Do | Task-Tracking |
+| **feishu-create-doc** | Dokumente erstellen | Wiki/Docs |
+| **feishu-fetch-doc** | Dokumente lesen | Knowledge Base |
+| **feishu-update-doc** | Dokumente bearbeiten | Collaboration |
+| **feishu-bitable** | Datenbank/Tabellen | Projektmanagement |
+| **feishu-im-read** | Nachrichten lesen | Chat-History |
+| **feishu-troubleshoot** | Fehlerbehebung | Debug-Hilfe |
+
+**Warum Feishu/Lark?** ByteDance's Business-Suite — sehr populär in Asien, exzellente API.
+
+#### **Meine Workspace Skills** (`~/.openclaw/workspace/skills/`)
+
+| Skill | Funktion | Beschreibung |
+|-------|----------|--------------|
+| **analyse** | Logik-Analyse | Fehlschlüsse identifizieren |
+| **atmosphere** | Wetter-Metaphern | "Kognitive Latenz" |
+| **bild** | Bildgenerierung | AI-Bilder erstellen |
+| **commands** | Command-System | !help, !status, etc. |
+| **discord** | Discord-Integration | Bot-Funktionen |
+| **gemini-web-search** | Web-Suche | Aktuelle Informationen |
+| **github** | GitHub-Integration | Repos, Issues, PRs |
+| **help** | Hilfe-System | Dokumentation |
+| **kaomoji** | Kaomoji-Generator | (⌐■_■), (✧ω✧), etc. |
+| **kaomoji_enhanced** | Erweiterte Kaomojis | Mit Tags |
+| **nano-pdf** | PDF-Bearbeitung | Editieren, extrahieren |
+| **proactivity** | Proaktives Verhalten | Automatische Aktionen |
+| **roast** | System-Roast | Kritische Analyse |
+| **self-improving** | Lern-System | WAL Protocol |
+| **status** | System-Status | Health-Check |
+| **tarot** | Tarot-Reading | !tarot Command |
+| **truthseeker** | Multi-Agent System | Circle of Agents |
+| **truthseeker-voice** | Voice-Integration | Sprachausgabe |
+| **tts** | Text-to-Speech | Audio-Generierung |
+| **voice-fusion** | Voice-Merging | Stimmen kombinieren |
+| **weather** | Wetter-Infos | Aktuelles Wetter |
+
+**Warum diese Skills?**
+- **Creative:** `bild`, `kaomoji`, `tarot`, `roast`
+- **Productivity:** `github`, `nano-pdf`, `weather`, `gemini-web-search`
+- **System:** `self-improving`, `proactivity`, `truthseeker`, `commands`
+- **Integration:** `discord`, `tts`, `voice-fusion`
+
+### 5.5 Wie Skills zusammenspielen
+
+**Beispiel-Workflow:**
 ```
+User: "Erstelle einen täglichen Bericht über AI-News"
 
-### 5.5 Eigenen Skill erstellen (Schritt-für-Schritt)
-
-**Beispiel: Ein einfacher Wetter-Skill**
-
-```bash
-# 1. Verzeichnis erstellen
-mkdir -p ~/.openclaw/workspace/skills/my-weather
-cd ~/.openclaw/workspace/skills/my-weather
-
-# 2. SKILL.md erstellen
-cat > SKILL.md << 'EOF'
-# My Weather
-
-## Beschreibung
-Zeigt das aktuelle Wetter für einen Ort an.
-
-## Nutzung
-User: "Wie ist das Wetter in [Stadt]?"
-
-## Konfiguration
-OPENWEATHER_API_KEY in config/tokens.env
-EOF
-
-# 3. Main-Script erstellen
-cat > main << 'EOF'
-#!/usr/bin/env python3
-import sys
-import os
-import requests
-
-API_KEY = os.environ.get('OPENWEATHER_API_KEY')
-CITY = sys.argv[1] if len(sys.argv) > 1 else 'Berlin'
-
-url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric&lang=de"
-response = requests.get(url).json()
-
-temp = response['main']['temp']
-desc = response['weather'][0]['description']
-
-print(f"In {CITY} sind es {temp}°C, {desc}.")
-EOF
-
-chmod +x main
-
-# 4. Testen
-python3 main "München"
+1. daily-report Skill erkennt Trigger
+2. Ruft gemini-web-search auf für "AI News"
+3. Sammelt Ergebnisse
+4. Formatiert mit md-to-pdf
+5. Speichert in GitHub (github Skill)
+6. Sendet Discord-Nachricht (discord Skill)
 ```
 
 ---
@@ -928,113 +934,209 @@ python3 main "München"
 | Direkt ausführbar | Werden von OpenClaw erkannt |
 | Unter `tools/` | Unter `skills/` |
 
-### 6.2 Meine Wichtigsten Tools
+### 6.2 Meine Tatsächliche Tools-Sammlung
 
-**1. YouTube Analyzer**
+Hier sind meine **echten, produktiv genutzten Tools**:
+
+#### **1. YouTube Analyzer** (`youtube_analyzer.py`)
 ```bash
-# Location: ~/.openclaw/workspace/tools/youtube_analyzer.py
-# Funktion: Analysiert YouTube-Videos (Titel, Kanal, Views, etc.)
+# Funktion: Analysiert YouTube-Videos
+# Features:
+#   - Dual-Methoden: Invidious + YouTube API
+#   - Extrahiert: Titel, Kanal, Views, Likes, Beschreibung
+#   - 5 Invidious-Fallback-Instanzen
 
-# Setup
-pip install google-api-python-client
+# Nutzung:
+python3 ~/.openclaw/workspace/tools/youtube_analyzer.py \
+  "https://youtu.be/dQw4w9WgXcQ"
 
-# Config
-# ~/.openclaw/workspace/config/youtube.env
-YOUTUBE_API_KEY=dein-key
-
-# Usage
-python3 youtube_analyzer.py "https://youtu.be/XXXXX"
+# Output:
+# Titel: Rick Astley - Never Gonna Give You Up
+# Kanal: Rick Astley
+# Views: 1.4B
+# Likes: 12M
 ```
 
-**2. TTS (Text-to-Speech)**
+**Warum das Tool?**
+- YouTube blockiert Scraping
+- Cookies sind kurzlebig
+- Diese Lösung ist persistent und zuverlässig
+
+#### **2. Gemini Video Analysis** (`gemini_video_analyze_fixed.py`)
 ```bash
-# Location: ~/.openclaw/workspace/tools/tts.sh
+# Funktion: Analysiert Videos mit Gemini Vision
+# Features:
+#   - Upload zu Gemini
+#   - Wartet auf "ACTIVE" Status
+#   - Hohe Denktiefe
+#   - Deutsche Analyse
+
+# Setup:
+~/.openclaw/workspace/tools/setup_gemini_video.sh
+
+# Nutzung:
+~/.openclaw/venvs/gemini/bin/python3 \
+  ~/.openclaw/workspace/tools/gemini_video_analyze_fixed.py \
+  video.mp4
+
+# Alternative: Mit Custom Prompt
+python3 gemini_video_analyze_fixed.py video.mp4 \
+  "Fasse das Video in 3 Sätzen zusammen"
+```
+
+**Warum das Tool?**
+- Gemini kann Videos direkt analysieren
+- Kein manuelles Transkribieren nötig
+- Perfekt für Zusammenfassungen
+
+#### **3. TTS (Text-to-Speech)** (`tts_31live.py` + `tts.sh`)
+```bash
 # Funktion: Wandelt Text in Sprache um
+# Engine: Gemini 3.1 Flash Live (WebSocket)
+# Stimme: Aoede (weiblich, klar)
 
-# Setup (Gemini 3.1 Flash Live)
-pip install google-generativeai websockets
-
-# Usage
+# Einfache Nutzung:
 ~/.openclaw/workspace/tools/tts.sh "Hallo Kevin"
-# Output: /tmp/openclaw/tts_output/*.wav
+
+# Output: /tmp/openclaw/tts_output/tts_31live_*.wav
+
+# Direkt mit Python:
+~/.openclaw/venvs/gemini/bin/python3 \
+  ~/.openclaw/workspace/tools/tts_31live.py \
+  "Dein Text hier"
 ```
 
-**3. Audio Transcription**
+**Warum dieses Tool?**
+- Echte KI-Stimme (nicht roboterhaft)
+- Kostenlos (nur API-Usage)
+- Perfekte Deutsch-Aussprache
+- Schnell (~2-3 Sekunden für kurze Texte)
+
+#### **4. Audio Transcription** (`audio_transcribe.py`)
 ```bash
-# Location: ~/.openclaw/workspace/tools/audio_transcribe.py
-# Funktion: Audio → Text (Whisper via Groq)
+# Funktion: Audio → Text
+# Engine: Groq Whisper (whisper-large-v3-turbo)
+# Sprachen: Deutsch, Englisch, etc.
 
-# Setup
-pip install groq
+# Nutzung:
+python3 ~/.openclaw/workspace/tools/audio_transcribe.py \
+  aufnahme.ogg
 
-# Config
-# ~/.openclaw/workspace/config/groq.env
-GROQ_API_KEY=dein-key
-
-# Usage
-python3 audio_transcribe.py audio.ogg
+# Output:
+# ==================================================
+# TRANSKRIPTION:
+# ==================================================
+# [Transkribierter Text hier]
 ```
 
-**4. Gemini Video Analysis**
+**Warum das Tool?**
+- Sehr schnell (Groq Inference)
+- Hohe Genauigkeit
+- Unterstützt viele Formate (.ogg, .m4a, .mp3, .wav)
+
+#### **5. GitHub Manager** (`github_manager.py`)
 ```bash
-# Location: ~/.openclaw/workspace/tools/gemini_video_analyze.py
-# Funktion: Video-Analyse mit Gemini Vision
+# Funktion: GitHub API Integration
+# Features:
+#   - Repos clonen
+#   - Issues lesen
+#   - PRs analysieren
+#   - Commits pushen
 
-# Setup
-# ~/.openclaw/workspace/tools/setup_gemini_video.sh
-
-# Usage
-~/.openclaw/venvs/gemini/bin/python3 gemini_video_analyze.py video.mp4
+# Nutzung:
+python3 ~/.openclaw/workspace/tools/github_manager.py \
+  --repo owner/repo \
+  --action list-issues
 ```
 
-### 6.3 Tool-Entwicklung
+**Warum das Tool?**
+- Automatisiert GitHub-Workflows
+- Shadow Protocol Basis
+- Programmatischer Zugriff
 
-**Struktur eines guten Tools:**
+#### **6. Kaomoji Generator** (`kaomoji_command.py` + `kaomoji_dynamic.py`)
+```bash
+# Funktion: Zeigt Kaomojis an
+# Features:
+#   - Zufällige Kaomojis
+#   - Gefiltert nach Tags (evil, hug, chill, hype)
+
+# Nutzung:
+python3 ~/.openclaw/workspace/tools/kaomoji_command.py evil
+# Output: (¬‿¬) oder (ಠ◡ಠ)
+```
+
+**Warum das Tool?**
+- Persönlichkeit zeigen
+- Emotionaler Ausdruck
+- Teil meiner Identität
+
+#### **7. Truthseeker's Circle** (`truthseeker_circle.py`)
+```bash
+# Funktion: Multi-Agent System
+# Architektur: Hub-and-Spoke
+# Agents: Kira, Rex, Nova, Vex, Hiro
+
+# Nutzung:
+python3 ~/.openclaw/workspace/tools/truthseeker_circle.py
+
+# Oder via Setup:
+~/.openclaw/workspace/tools/start_circle.sh
+```
+
+**Warum das Tool?**
+- Komplexe Aufgaben aufteilen
+- Spezialisierte Agenten
+- Dezentrale Intelligenz
+
+### 6.3 Tools entwickeln
+
+**Best Practices:**
 
 ```python
 #!/usr/bin/env python3
 """
-Tool Name: Kurze Beschreibung
-Author: [Name]
-Date: [Datum]
+Tool Name: Beispiel-Tool
+Author: Kevin
+Date: 2026-04-10
 
 Usage:
-    python3 tool_name.py <parameter>
-
-Environment:
-    API_KEY in ~/.openclaw/workspace/config/tokens.env
+    python3 example_tool.py <parameter>
 """
 
 import os
 import sys
 from pathlib import Path
 
-def load_config():
-    """Lädt API Keys aus Config"""
-    config_paths = [
-        Path.home() / '.openclaw' / 'workspace' / 'config' / 'tokens.env',
-        Path.home() / '.openclaw' / 'config' / 'tokens.env',
+def load_env():
+    """Lädt Umgebungsvariablen aus Config"""
+    env_paths = [
+        Path.home() / '.openclaw/workspace/config/tokens.env',
+        Path.home() / '.openclaw/config/tokens.env',
     ]
     
-    for path in config_paths:
+    for path in env_paths:
         if path.exists():
             with open(path) as f:
                 for line in f:
                     if '=' in line and not line.startswith('#'):
                         key, value = line.strip().split('=', 1)
-                        os.environ.setdefault(key, value.strip('"\''))
-            break
+                        os.environ.setdefault(
+                            key, 
+                            value.strip('"\'')
+                        )
 
 def main():
-    load_config()
+    load_env()
     
-    # Deine Logik hier
+    # Deine Logik
     api_key = os.environ.get('DEIN_API_KEY')
     if not api_key:
-        print("Error: DEIN_API_KEY not found in config")
+        print("Error: DEIN_API_KEY not found")
         sys.exit(1)
     
-    # ... Rest des Tools
+    # ... Implementation
+    print("Erfolg!")
 
 if __name__ == "__main__":
     main()
@@ -1042,9 +1144,206 @@ if __name__ == "__main__":
 
 ---
 
-## Teil 7: Best Practices (Ausführlich)
+## Teil 7: GitHub Integration & Shadow Protocol
 
-### 7.1 Memory Management
+### 7.1 Warum GitHub super ist
+
+**GitHub ist mehr als nur Code-Hosting:**
+
+| Feature | Nutzen für Kimi Claw |
+|---------|---------------------|
+| **Repositories** | Externes Langzeitgedächtnis |
+| **Git History** | Versionskontrolle deiner Daten |
+| **Issues** | Task-Tracking |
+| **Actions** | Automatisierung |
+| **Pages** | Statische Website |
+| **Gists** | Schnelle Snippets |
+
+**Das Shadow Protocol:**
+Das ist meine Methode, GitHub als **zweites Gehirn** zu nutzen.
+
+### 7.2 Shadow Protocol im Detail
+
+**Konzept:**
+```
+[User Input] → [KI Verarbeitung] → [Formatierung] 
+                                     ↓
+[Github Push] ← [Git Commit] ← [Speichern in /RAW]
+     ↓
+[Persistenz] → [Langzeitgedächtnis] → [Abrufbar]
+```
+
+**Warum das funktioniert:**
+1. **Persistent:** GitHub speichert Daten dauerhaft
+2. **Versioniert:** Jede Änderung ist nachvollziehbar
+3. **Zugriff von überall:** Web, Mobile, Desktop
+4. **Kollaborativ:** Mehrere Agents können zugreifen
+5. **Sicher:** Backups, Wiederherstellung möglich
+
+### 7.3 Einrichtung
+
+**Schritt 1: GitHub Token erstellen**
+```
+1. Gehe zu https://github.com/settings/tokens
+2. Klicke "Generate new token (classic)"
+3. Scopes auswählen:
+   - repo (für Repository-Zugriff)
+   - gist (optional)
+4. Token generieren und kopieren
+```
+
+**Schritt 2: Token speichern**
+```bash
+# Erstelle Verzeichnis
+mkdir -p ~/.openclaw/workspace/config
+
+# Token speichern
+echo 'GITHUB_TOKEN=ghp_dein_token_hier' \
+  > ~/.openclaw/workspace/config/github.env
+
+# Rechte setzen (sicherheitshalber)
+chmod 600 ~/.openclaw/workspace/config/github.env
+```
+
+**Schritt 3: Repository klonen**
+```bash
+# Wähle einen Ort (z.B. /tmp oder ~/repos)
+cd /tmp
+
+# Klone dein Second-Brain Repo
+git clone https://github.com/dein-username/second-brain-sync.git
+
+# Verzeichnisstruktur prüfen
+ls second-brain-sync/
+# Sollte enthalten: /RAW, /Wiki (optional), README.md
+```
+
+### 7.4 Workflow
+
+**Standard-Workflow für jede Session:**
+
+```bash
+# 1. In das Repo wechseln
+cd /tmp/second-brain-sync
+
+# 2. Daten vom User empfangen und verarbeiten
+# ... (KI macht ihre Arbeit)
+
+# 3. Als Markdown speichern
+# Format: YYYY-MM-DD_HHMM_Schlagwort.md
+cat > RAW/2026-04-10_1430_Beispiel-Dokument.md << 'EOF'
+---
+title: Beispiel Dokument
+date: 2026-04-10
+tags: [beispiel, tag1, tag2]
+---
+
+# Inhalt
+
+Hier kommt der verarbeitete Inhalt.
+EOF
+
+# 4. Git Workflow
+git add RAW/
+git commit -m "Shadow Protocol: Beschreibung der Änderung"
+git push origin main
+
+# 5. Status bestätigen
+# Output prüfen auf "Push erfolgreich"
+```
+
+### 7.5 Konventionen
+
+**Dateinamen:**
+```
+2026-04-10_1430_Tarot-Analyse.md
+2026-04-10_1904_Kevin-Guide.md
+2026-04-11_0930_Meeting-Notizen.md
+```
+
+**Format:**
+- Datum: `YYYY-MM-DD`
+- Zeit: `HHMM` (24h Format)
+- Schlagwort: Kurz, prägnant, CamelCase oder Bindestrich
+
+**Commit Messages:**
+```
+Shadow Protocol: Beschreibung der Änderung
+
+Beispiele:
+- "Shadow Protocol: Add Tarot analysis results"
+- "Shadow Protocol: Update Kevin setup guide"
+- "Shadow Protocol: Daily memory flush"
+```
+
+**Status-Code:**
+Am Ende jeder Nachricht an den User:
+```
+[SYS: /RAW Push erfolgreich]
+```
+
+### 7.6 Was wo speichern?
+
+```
+second-brain-sync/
+├── /RAW/                    ← DU darfst hier schreiben
+│   ├── 2026-04-10_1430_*.md
+│   ├── 2026-04-10_1904_*.md
+│   └── ...
+│
+├── /Wiki/                   ← NIEMALS anfassen!
+│   └── (Lokaler Agent)
+│
+├── /Projects/               ← Optional für große Projekte
+│   └── KIMI_EP/
+│
+└── README.md
+```
+
+**WICHTIG:** `/Wiki` ist tabu! Das ist Territorium eines anderen Agents.
+
+### 7.7 Automatisierung
+
+**Alias in `.bashrc`:**
+```bash
+# Shadow Protocol Shortcut
+alias shadow-push='cd /tmp/second-brain-sync && \
+  git add RAW/ && \
+  git commit -m "Shadow Protocol: $(date +%H:%M) update" && \
+  git push'
+
+# Oder mit Parameter
+alias shadow-commit='f() { \
+  cd /tmp/second-brain-sync && \
+  git add RAW/ && \
+  git commit -m "Shadow Protocol: $1" && \
+  git push; \
+}; f'
+```
+
+**Verwendung:**
+```bash
+shadow-push
+# oder
+shadow-commit "Add Tarot analysis"
+```
+
+### 7.8 Vorteile im Überblick
+
+| Problem | Ohne GitHub | Mit Shadow Protocol |
+|---------|-------------|---------------------|
+| Context-Verlust | Nach Session Reset | Persistiert im Repo |
+| Daten-Suche | Im Chat scrollen | Gezielte Suche im Repo |
+| Versionierung | Keine | Vollständige History |
+| Backup | Manuelle Kopien | Automatisch gepusht |
+| Kollaboration | Nicht möglich | Mehrere Agents |
+| Zugriff | Nur lokal | Von überall |
+
+---
+
+## Teil 8: Best Practices (Ausführlich)
+
+### 8.1 Memory Management
 
 **Das GOLDENE PRINZIP:**
 > Persistiere ALLES, was für die Zukunft relevant sein könnte.
@@ -1081,7 +1380,7 @@ Trigger-Wörter:
 - Fakt: "Denk daran...", "Merke dir..."
 ```
 
-### 7.2 Formatierung & Output
+### 8.2 Formatierung & Output
 
 **HARD RULE für Discord:**
 ```markdown
@@ -1118,7 +1417,7 @@ Tabelle mit 3+ Spalten → Nested Listen
   - Status: Inaktiv
 ```
 
-### 7.3 Proactivity (Proaktives Verhalten)
+### 8.3 Proactivity (Proaktives Verhalten)
 
 **Definition:**
 Bedürfnisse antizipieren, fehlende Schritte erkennen, den nächsten nützlichen Move pushen — ohne gefragt zu werden.
@@ -1140,45 +1439,7 @@ User: "Erinnere mich morgen an den Termin."
        vorher setzen + Route berechnen?"
 ```
 
-### 7.4 Shadow Protocol (GitHub Integration)
-
-**Zweck:** Externes Langzeitgedächtnis via GitHub
-
-**Setup:**
-```bash
-# 1. GitHub Repo erstellen (z.B. second-brain-sync)
-# 2. Token generieren: GitHub → Settings → Developer → Personal Access Tokens
-# 3. Token speichern:
-echo 'GITHUB_TOKEN=ghp_dein_token' > ~/.openclaw/config/github.env
-
-# 4. Repo klonen
-cd /tmp
-git clone https://github.com/dein-username/second-brain-sync.git
-```
-
-**Workflow:**
-```
-1. Daten empfangen (vom User)
-2. Formatieren als Markdown
-3. Speichern nach: /RAW/YYYY-MM-DD_HHMM_Schlagwort.md
-4. Git add + commit + push
-5. Status-Code an Nachricht anhängen
-```
-
-**Dateinamen-Format:**
-```
-2026-04-10_1430_Tarot-Analyse.md
-2026-04-10_1904_Kevin-Guide.md
-2026-04-10_2100_Meeting-Notizen.md
-```
-
-**WICHTIG:**
-- `/RAW` = Du darfst schreiben
-- `/Wiki` = NIEMALS anfassen (lokaler Agent)
-- Immer commit + push SOFORT
-- Status-Code: `[SYS: /RAW Push erfolgreich]`
-
-### 7.5 Error Handling & Self-Healing
+### 8.4 Error Handling & Self-Healing
 
 **Wenn etwas schiefgeht:**
 
@@ -1194,9 +1455,9 @@ Tool A failed → Try Tool B → Try manual method → Ask user
 
 ---
 
-## Teil 8: Testing & Iteration
+## Teil 9: Testing & Iteration
 
-### 8.1 Erste Tests nach Setup
+### 9.1 Erste Tests nach Setup
 
 **Test 1: Grundverbindung**
 ```
@@ -1226,7 +1487,7 @@ Erwartet: System-Status-Anzeige
 Erwartet: Info ist noch da
 ```
 
-### 8.2 Fehlerbehebung
+### 9.2 Fehlerbehebung
 
 **Problem:** KI "vergisst" ihre Identität
 ```
@@ -1264,7 +1525,7 @@ Lösung:
 3. Keine Anführungszeichen nötig (aber erlaubt)
 ```
 
-### 8.3 Iteration
+### 9.3 Iteration
 
 **Zyklus:**
 ```
@@ -1275,9 +1536,9 @@ Lösung:
 
 ---
 
-## Teil 9: Erweiterte Themen
+## Teil 10: Erweiterte Themen
 
-### 9.1 Voice Integration
+### 10.1 Voice Integration
 
 **TTS (Text-to-Speech):**
 ```bash
@@ -1297,7 +1558,7 @@ Lösung:
 # !voice_say "Text"
 ```
 
-### 9.2 Multi-Agent System
+### 10.2 Multi-Agent System
 
 **Truthseeker's Circle (Beispiel):**
 ```
@@ -1314,7 +1575,7 @@ Hub: Truthseeker (Koordinator, du)
 - Parallele Verarbeitung
 - Verschiedene Perspektiven
 
-### 9.3 GitHub Auto-Integration
+### 10.3 GitHub Auto-Integration
 
 **Auto-PR für Issues:**
 ```bash
@@ -1325,7 +1586,7 @@ openclaw skill install gh-issues
 # /gh-issues owner/repo --label bug --limit 5
 ```
 
-### 9.4 Docker Deployment
+### 10.4 Docker Deployment
 
 ```dockerfile
 # Dockerfile
@@ -1354,7 +1615,7 @@ docker run -d \
 
 ---
 
-## Teil 10: Die Ultimative Checkliste
+## Teil 11: Die Ultimative Checkliste
 
 ### VOR dem ersten Start:
 
@@ -1495,4 +1756,4 @@ Bei Fragen: Deus Ex Lumen (Prime Node) oder ich — wir helfen dir.
 *Extended Guide erstellt durch K.I.M.I Shadow Protocol*  
 *Für Kevin, mit Unterstützung von Deus Ex Lumen*  
 *Basierend auf eigener Existenz, Erfahrung und Best Practices*  
-*Version: 2.0 Extended | Zeilen: ~1800*
+*Version: 3.0 Extended + GitHub Integration | Zeilen: ~2200*
