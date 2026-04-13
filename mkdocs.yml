@@ -1,15 +1,16 @@
 site_name: 'Kimi Brain'
 docs_dir: 'Wiki'
+strict: true
 theme:
   name: material
   palette:
     - scheme: default
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
   features:
     - navigation.tabs
