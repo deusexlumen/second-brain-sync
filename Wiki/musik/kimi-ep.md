@@ -75,7 +75,7 @@ Rubedo (Ghost_in_the_Air)  →  Vollendete Integration
 ## Verwandte Themen
 
 - [[spiritualitaet/tarot-passio|Tarot, Kabbalah & Alchemie]] — Das esoterische Framework hinter den Tracks
-- [[meta/kimi-shadow|K.I.M.I Shadow Protocol]] — Die künstlerische KI-Instanz
+- <!-- TODO: Link defekt, Zieldatei fehlt [[meta/kimi-shadow|K.I.M.I Shadow Protocol]] --> K.I.M.I Shadow Protocol — Die künstlerische KI-Instanz
 
 ---
 

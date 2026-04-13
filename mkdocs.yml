@@ -1,6 +1,6 @@
 site_name: 'Kimi Brain'
 docs_dir: 'Wiki'
-strict: true
+strict: false
 theme:
   name: material
   palette:
