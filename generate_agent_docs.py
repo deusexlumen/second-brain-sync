@@ -4,8 +4,10 @@ Generiert eine menschenlesbare Markdown-Datei (docs/AGENTS.md)
 aus der maschinenlesbaren agents.yaml.
 """
 
+import sys
 import yaml
 from pathlib import Path
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 INPUT = Path("agents.yaml")
 OUTPUT_DIR = Path("docs")
@@ -16,14 +18,20 @@ def section(title: str, level: int = 2) -> str:
     return f"{'#' * level} {title}\n"
 
 
-def main():
-    if not INPUT.exists():
-        raise FileNotFoundError(f"{INPUT} nicht gefunden.")
+@retry(
+    stop=stop_after_attempt(5),
+    wait=wait_exponential(multiplier=1, min=2, max=30),
+    reraise=True,
+)
+def enhance_content_via_llm(content: str) -> str:
+    """
+    Platzhalter für zukünftige LLM-Integration.
+    Aktuell pass-through; hier können API-Calls mit Retry-Logik ergänzt werden.
+    """
+    return content
 
-    with open(INPUT, "r", encoding="utf-8") as f:
-        data = yaml.safe_load(f)
 
-    OUTPUT_DIR.mkdir(exist_ok=True)
+def generate_markdown(data: dict) -> str:
     lines = []
 
     # Projekt-Kopf
@@ -32,7 +40,8 @@ def main():
     lines.append(f"> {p['description']}\n")
 
     lines.append(section("Projekt-Übersicht"))
-    lines.append(f"{p['overview']}\n")
+    overview = enhance_content_via_llm(p["overview"])
+    lines.append(f"{overview}\n")
 
     lines.append(section("Technologie-Stack"))
     stack = p["stack"]
@@ -88,7 +97,8 @@ def main():
         lines.append(f"**Rolle:** {agent['role']}\n")
         lines.append(f"**Trigger:** {', '.join(f'`{t}`' for t in agent['trigger'])}\n")
         lines.append(f"**Tools:** {', '.join(f'`{t}`' for t in agent['tools'])}\n")
-        lines.append(f"{agent['prompt']}\n")
+        prompt = enhance_content_via_llm(agent["prompt"])
+        lines.append(f"{prompt}\n")
         lines.append(section("Workflow", level=3))
         for phase in agent["workflow"]:
             lines.append(f"#### Phase {phase['phase']}: {phase['title']}\n")
@@ -96,11 +106,44 @@ def main():
                 lines.append(f"{i}. {step}")
             lines.append("")
 
-    with open(OUTPUT, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+    return "\n".join(lines)
+
+
+def main() -> int:
+    try:
+        if not INPUT.exists():
+            print(f"[ERROR] Eingabedatei nicht gefunden: {INPUT}", file=sys.stderr)
+            return 1
+
+        with open(INPUT, "r", encoding="utf-8") as f:
+            raw_yaml = f.read()
+    except OSError as exc:
+        print(f"[ERROR] Datei konnte nicht gelesen werden: {exc}", file=sys.stderr)
+        return 1
+
+    try:
+        data = yaml.safe_load(raw_yaml)
+    except yaml.YAMLError as exc:
+        print(f"[ERROR] YAML-Parsing fehlgeschlagen: {exc}", file=sys.stderr)
+        return 1
+
+    if not isinstance(data, dict):
+        print("[ERROR] YAML-Struktur ungültig: Root-Element muss ein Dictionary sein.", file=sys.stderr)
+        return 1
+
+    try:
+        OUTPUT_DIR.mkdir(exist_ok=True)
+        markdown = generate_markdown(data)
+
+        with open(OUTPUT, "w", encoding="utf-8") as f:
+            f.write(markdown)
+    except OSError as exc:
+        print(f"[ERROR] Markdown-Datei konnte nicht geschrieben werden: {exc}", file=sys.stderr)
+        return 1
 
     print(f"[OK] {OUTPUT} erfolgreich generiert.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -29,7 +29,7 @@ try {
     Write-Host 'Virtual Environment aktiviert.' -ForegroundColor Green
 
     Write-Host 'Baue Wiki mit MkDocs...' -ForegroundColor Yellow
-    mkdocs build
+    mkdocs build --strict
     if ($LASTEXITCODE -ne 0) {
         throw 'MkDocs Build fehlgeschlagen.'
     }
