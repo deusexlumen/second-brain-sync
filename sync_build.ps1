@@ -3,7 +3,19 @@ $ErrorActionPreference = 'Stop'
 try {
     Write-Host '=== Second Brain Sync & Build ===' -ForegroundColor Cyan
 
-    # 1. Voraussetzungen prüfen
+    # 1. Git Pull mit Fehlerprüfung
+    Write-Host 'Führe git pull aus...' -ForegroundColor Yellow
+    git pull origin main
+    if ($LASTEXITCODE -ne 0) {
+        throw 'Git Pull fehlgeschlagen (Möglicher Merge Conflict).'
+    }
+    Write-Host 'Git Pull erfolgreich.' -ForegroundColor Green
+
+    # 2. Voraussetzungen prüfen (nach VEnv-Aktivierung)
+    Write-Host 'Aktiviere Virtual Environment (.venv)...' -ForegroundColor Yellow
+    & .venv\Scripts\Activate.ps1
+    Write-Host 'Virtual Environment aktiviert.' -ForegroundColor Green
+
     Write-Host 'Prüfe Voraussetzungen...' -ForegroundColor Yellow
     if (-not (Get-Command python -ErrorAction SilentlyContinue)) {
         Write-Error "Python wurde nicht gefunden. Bitte installiere Python und führe 'pip install -r requirements.txt' aus."
@@ -14,19 +26,6 @@ try {
         exit 1
     }
     Write-Host 'Voraussetzungen erfüllt.' -ForegroundColor Green
-
-    # 2. Git Pull mit Fehlerprüfung
-    Write-Host 'Führe git pull aus...' -ForegroundColor Yellow
-    git pull origin main
-    if ($LASTEXITCODE -ne 0) {
-        throw 'Git Pull fehlgeschlagen (Möglicher Merge Conflict).'
-    }
-    Write-Host 'Git Pull erfolgreich.' -ForegroundColor Green
-
-    # 3. MkDocs Build (Sandboxed)
-    Write-Host 'Aktiviere Virtual Environment (.venv)...' -ForegroundColor Yellow
-    & .venv\Scripts\Activate.ps1
-    Write-Host 'Virtual Environment aktiviert.' -ForegroundColor Green
 
     Write-Host 'Baue Wiki mit MkDocs...' -ForegroundColor Yellow
     mkdocs build --strict
