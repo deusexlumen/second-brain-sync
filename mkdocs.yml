@@ -11,15 +11,24 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
 plugins:
   - search
   - tags
   - roamlinks
+  - git-revision-date-localized
+  - macros
 markdown_extensions:
   - meta
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight
   - pymdownx.mark
   - pymdownx.tasklist:
       custom_checkbox: true

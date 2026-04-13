@@ -1,0 +1,120 @@
+project:
+  name: WikiMD / Kimi Brain
+  description: Diese Datei ist für AI-Coding-Agenten bestimmt. Sie beschreibt die Architektur, Konventionen und Workflows dieses Projekts.
+  overview: >
+    WikiMD (auch „Kimi Brain“ oder „Second Brain“) ist ein persönliches
+    Knowledge-Management-System. Es basiert auf MkDocs mit dem Material-
+    for-MkDocs-Theme und wird als statische Website gebaut und deployed.
+    Ein zentrales Konzept ist der Brain Sync: Ein automatisierter Workflow,
+    bei dem unbearbeitete Rohdateien aus RAW/ in strukturierte Wiki-Einträge
+    umgewandelt, das Wiki neu gebaut und auf GitHub gepusht werden.
+  stack:
+    generator: MkDocs 1.6.x
+    theme: material (MkDocs Material 9.7.x)
+    python_env: Lokales .venv-Verzeichnis (PowerShell)
+    plugins:
+      - search
+      - tags
+      - roamlinks (mkdocs-roamlinks-plugin)
+      - git-revision-date-localized
+      - macros
+    markdown_extensions:
+      - meta
+      - admonition
+      - pymdownx.details
+      - pymdownx.superfences
+      - pymdownx.highlight
+      - pymdownx.mark
+      - pymdownx.tasklist
+    editor: VS Code (empfohlene Extension foam.foam-vscode)
+    automation:
+      - serve.ps1
+      - sync_build.ps1
+  directories:
+    Wiki/: Quell-Markdown-Dateien (docs_dir in mkdocs.yml)
+    Assets/: Bilder, PDFs und andere Medien
+    RAW/: Eingangskorb für unbearbeitete Rohdateien
+    Log/: Verarbeitungshistorie
+    site/: Generierter HTML-Output (in .gitignore)
+    .venv/: Python-Virtual-Environment (in .gitignore)
+  commands:
+    local_server:
+      script: .\serve.ps1
+      description: Aktiviert .venv, öffnet den Browser unter http://127.0.0.1:8000 und startet mkdocs serve.
+    deploy:
+      script: .\sync_build.ps1
+      steps:
+        - git pull origin main (bricht bei Fehler ab)
+        - .venv\Scripts\Activate.ps1
+        - mkdocs build
+        - git add .
+        - git commit -m "Auto-Sync & Build"
+        - git push origin main
+  conventions:
+    frontmatter:
+      required: true
+      fields:
+        title: Anzeigetitel der Seite
+        date: YYYY-MM-DD
+        tags: [tag1, tag2, tag3]
+    wiki_links:
+      syntax: "[[pfad/zur-datei|Anzeigetext]]"
+      example: "[[technik/vibe-coding|Vibe Coding]] — KI-gestützte Softwareentwicklung"
+    admonitions:
+      - info
+      - danger
+      - success
+      - quote
+    media_references: "../Assets/bildname.jpg"
+    structural_elements:
+      - Abschnitte werden durch horizontale Linien (---) getrennt.
+      - Überschriften folgen einer numerischen Gliederung.
+      - Tabellen werden für Vergleiche genutzt.
+      - Code-Blöcke und Mathe-Blöcke sind erlaubt.
+      - Alle Inhalte sind auf Deutsch verfasst.
+  git_rules:
+    ignored:
+      - .venv/
+      - site/
+      - .DS_Store
+    notes:
+      - site/ existiert lokal als Build-Artefakt.
+      - Bei sync_build.ps1 wird bei fehlgeschlagenem git pull sofort abgebrochen.
+      - Der Brain Sync arbeitet direkt auf dem main-Branch.
+  safety_notes:
+    - Nie Dateien außerhalb des Projekt-Roots verändern, es sei denn, es wird explizit angefordert.
+    - .venv/ und site/ nicht manuell committen.
+
+agents:
+  - name: Brain Sync Agent
+    role: Autonomer Verwalter des Second Brains
+    trigger:
+      - "Kimi, Brain Sync"
+      - "Verarbeite mein Wissen"
+    prompt: >
+      Wenn der Nutzer den Trigger-Befehl gibt, führe die folgende
+      3-Phasen-Sequenz autonom und ohne Rückfragen aus.
+    tools:
+      - git
+      - powershell
+      - file_system
+    workflow:
+      - phase: "1"
+        title: Daten abholen
+        steps:
+          - Führe im Terminal aus: git pull origin main
+          - Warte auf den Abschluss des Pulls.
+      - phase: "2"
+        title: Kognitive Verarbeitung
+        steps:
+          - Analysiere alle neuen Dateien im Ordner /RAW.
+          - Verschiebe alle Bilder/PDFs aus /RAW nach /Assets.
+          - Konvertiere die Texte aus /RAW in strukturierte Markdown-Notizen und speichere sie in /Wiki (unter sinnvoller Pfad-Struktur).
+          - "Zwingende Regeln für neue Wiki-Dateien: YAML-Frontmatter mit title, date, tags; Logische [[Backlinks]]; Admonitions für wichtige Tipps/Hinweise; Medien relativ referenzieren (../Assets/bildname.jpg)"
+          - Lösche die verarbeiteten Dateien aus /RAW.
+          - Dokumentiere die Arbeit (hinzugefügte Themen) kurz in /Log/history.md.
+      - phase: "3"
+        title: Versiegelung & Deployment
+        steps:
+          - Führe im Terminal aus: .\sync_build.ps1
+          - Melde dich anschließend mit: "Brain Sync abgeschlossen. Dein Wiki ist aktuell."
