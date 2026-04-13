@@ -2,28 +2,16 @@
 
 <div class="grid cards" markdown>
 
--   :material-brain:{ .lg .middle } __Wissensbasis (Wiki)__
+-   :material-brain: **Wissensbasis (Wiki)**
+    Hier befinden sich alle strukturierten, von der KI aufbereiteten Notizen.
+[Zum Wiki](Wiki/index.md)
 
-    ---
+-   :material-inbox-arrow-down: **Inbox (RAW)**
+    Meine Rohentwürfe und ungelesenen Ressourcen.
+[Zur Inbox](RAW/index.md)
 
-    Hier liegen die KI-aufbereiteten Notizen und das strukturierte Wissen.
-
-    [Zum Wiki](Wiki/)
-
--   :material-inbox-arrow-down:{ .lg .middle } __Inbox (RAW)__
-
-    ---
-
-    Rohentwürfe, unbearbeitete Ideen und Rohdateien vor der Verarbeitung.
-
-    [Zur Inbox](RAW/)
-
--   :material-history:{ .lg .middle } __Logs__
-
-    ---
-
-    System-Logs, Verarbeitungshistorie und Chronik der Änderungen.
-
-    [Zu den Logs](Log/)
+-   :material-history: **Logs**
+    Tagebucheinträge und System-Logs.
+    [Zu den Logs](Log/index.md)
 
 </div>
