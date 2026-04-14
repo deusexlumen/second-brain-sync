@@ -1,0 +1,100 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#willkommen-im-second-brain"
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - img [ref=e6] [cursor=pointer]
+      - generic [ref=e9]:
+        - generic [ref=e11]: Kimi Brain
+        - generic:
+          - generic: Willkommen im Second Brain
+      - generic [ref=e12]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e13] [cursor=pointer]:
+          - img [ref=e14]
+        - radio "Switch to light mode"
+      - img [ref=e17] [cursor=pointer]
+      - dialog:
+        - search:
+          - generic:
+            - textbox "Search" [ref=e19]
+            - img [ref=e21] [cursor=pointer]
+            - navigation "Search":
+              - button "Clear":
+                - img
+          - generic [ref=e24]: Initializing search
+  - generic [ref=e25]:
+    - main [ref=e26]:
+      - generic [ref=e27]:
+        - navigation "Navigation" [ref=e30]:
+          - generic [ref=e31] [cursor=pointer]:
+            - link "Kimi Brain" [ref=e32]:
+              - /url: .
+              - img [ref=e33]
+            - text: Kimi Brain
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Willkommen im Second Brain" [ref=e37] [cursor=pointer]:
+                - /url: .
+                - generic [ref=e38]: Willkommen im Second Brain
+            - listitem [ref=e39]:
+              - link "Meta" [ref=e40] [cursor=pointer]:
+                - /url: meta/github-sync/
+                - generic [ref=e41]: Meta
+            - listitem [ref=e43]:
+              - link "Musik" [ref=e44] [cursor=pointer]:
+                - /url: musik/kimi-ep/
+                - generic [ref=e45]: Musik
+            - listitem [ref=e47]:
+              - link "Philosophie" [ref=e48] [cursor=pointer]:
+                - /url: philosophie/kit-kalkul/
+                - generic [ref=e49]: Philosophie
+            - listitem [ref=e51]:
+              - link "Politik" [ref=e52] [cursor=pointer]:
+                - /url: politik/losdemokratie/
+                - generic [ref=e53]: Politik
+            - listitem [ref=e55]:
+              - link "Spiritualitaet" [ref=e56] [cursor=pointer]:
+                - /url: spiritualitaet/tarot-passio/
+                - generic [ref=e57]: Spiritualitaet
+            - listitem [ref=e59]:
+              - link "Technik" [ref=e60] [cursor=pointer]:
+                - /url: technik/vibe-coding/
+                - generic [ref=e61]: Technik
+        - article [ref=e64]:
+          - heading "Willkommen im Second Brain" [level=1] [ref=e65]
+          - list [ref=e67]:
+            - listitem [ref=e68]:
+              - paragraph [ref=e69]:
+                - img [ref=e71]
+                - strong [ref=e73]: Wissensbasis (Wiki)
+                - text: Hier befinden sich alle strukturierten, von der KI aufbereiteten Notizen.
+                - link "Zum Wiki" [ref=e74] [cursor=pointer]:
+                  - /url: Wiki/index.md
+            - listitem [ref=e75]:
+              - paragraph [ref=e76]:
+                - img [ref=e78]
+                - strong [ref=e80]: Inbox (RAW)
+                - text: Meine Rohentwürfe und ungelesenen Ressourcen.
+                - link "Zur Inbox" [ref=e81] [cursor=pointer]:
+                  - /url: RAW/index.md
+            - listitem [ref=e82]:
+              - paragraph [ref=e83]:
+                - img [ref=e85]
+                - strong [ref=e87]: Logs
+                - text: Tagebucheinträge und System-Logs.
+                - link "Zu den Logs" [ref=e88] [cursor=pointer]:
+                  - /url: Log/index.md
+          - complementary [ref=e89]:
+            - generic [ref=e90]:
+              - generic "Last update" [ref=e91]:
+                - img [ref=e92]
+              - generic "April 13, 2026 19:29:40 UTC" [ref=e94]: April 13, 2026
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e95]:
+      - generic [ref=e98]:
+        - text: Made with
+        - link "Material for MkDocs" [ref=e99] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/

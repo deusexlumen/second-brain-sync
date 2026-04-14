@@ -1,0 +1,40 @@
+/* CYBER-NOTION HYBRID ÄSTHETIK */
+
+/* Typografie- und Kanten-Variablen */
+:root {
+  --md-admonition-border-radius: 0.5rem;
+  --md-code-border-radius: 0.5rem;
+  --md-typeset-table-border-radius: 0.5rem;
+  --md-code-font-family: "Fira Code", monospace;
+  --md-text-font-family: "Inter", sans-serif;
+}
+
+/* Weiche Karten mit hartem Terminal-Hover-Effekt */
+.md-typeset .grid.cards > :is(ul,ol) > li {
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background-color: var(--md-default-bg-color);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.md-typeset .grid.cards > :is(ul,ol) > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-color: var(--md-primary-fg-color); /* Leuchtender Rahmen beim Hover */
+}
+
+/* Tags im Terminal-Look */
+.md-tag {
+  font-family: var(--md-code-font-family);
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  background-color: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Admonitions (Hinweisboxen) cleaner machen */
+.md-typeset .admonition {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-left-width: 4px;
+}

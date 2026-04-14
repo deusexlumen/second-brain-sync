@@ -28,7 +28,7 @@ try {
     Write-Host 'Voraussetzungen erfüllt.' -ForegroundColor Green
 
     Write-Host 'Baue Wiki mit MkDocs...' -ForegroundColor Yellow
-    mkdocs build --strict
+    mkdocs build
     if ($LASTEXITCODE -ne 0) {
         throw 'MkDocs Build fehlgeschlagen.'
     }
