@@ -1,0 +1,11 @@
+#!/bin/bash
+# Enhanced Kaomoji Command - mit dynamischer Stimmungserkennung
+# Usage: !kaomoji [mood|text]
+
+if [ -z "\$1" ]; then
+    python3 ~/.openclaw/workspace/tools/kaomoji_dynamic.py random
+elif [ "\$1" = "protection" ] || [ "\$1" = "anger" ] || [ "\$1" = "excited" ] || [ "\$1" = "crying" ] || [ "\$1" = "annoyed" ] || [ "\$1" = "smiling" ] || [ "\$1" = "smirk" ] || [ "\$1" = "surprise" ] || [ "\$1" = "table_flip" ] || [ "\$1" = "thinking" ] || [ "\$1" = "sleep" ] || [ "\$1" = "random" ]; then
+    python3 ~/.openclaw/workspace/tools/kaomoji_dynamic.py "\$1"
+else
+    python3 ~/.openclaw/workspace/tools/kaomoji_dynamic.py "\$@"
+fi

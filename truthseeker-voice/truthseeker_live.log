@@ -1,0 +1,12 @@
+2026-04-02 06:29:31,200 - discord.client - INFO - logging in using static token
+2026-04-02 06:29:31,754 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2026-04-02 06:29:32,167 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-arm-us-east1-d-t6mq",{"micros":183684,"calls":["id_created",{"micros":1530,"calls":[]},"session_lookup_time",{"micros":6512,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-1",{"micros":174803,"calls":["start_session",{"micros":103896,"calls":["prd-rpc-77c5d4ff89-t8rwt",{"micros":35063,"calls":["get_user",{"micros":5641},"get_guilds",{"micros":3000},"send_scheduled_deletion_message",{"micros":13},"guild_join_requests",{"micros":3},"authorized_ip_coro",{"micros":11},"pending_payments",{"micros":1571},"apex_experiments",{"micros":59265},"sessions_experiments",{"micros":8},"played_application_ids",{"micros":5},"linked_users",{"micros":4},"ad_personalization_toggles_disabled",{"micros":14},"regional_feature_config",{"micros":4}]}]},"starting_guild_connect",{"micros":31,"calls":[]},"presence_started",{"micros":25582,"calls":[]},"guilds_started",{"micros":225,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":45032,"calls":[]},"connect_finished",{"micros":45048,"calls":[]},"build_ready",{"micros":15,"calls":[]},"clean_ready",{"micros":3,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: f822074141706a01d8d6f3b19127f75a).
+2026-04-02 06:29:34,504 - truthseeker-live - INFO - ✅ Truthseeker LIVE bereit als Truthseeker#1628
+2026-04-02 06:29:34,504 - truthseeker-live - INFO - 🎙️ Bidirektionale Gemini 3.1 Konversation aktiviert
+2026-04-02 06:29:34,504 - truthseeker-live - INFO - 🔊 Audio Pipeline: Discord ⟷ Gemini Live
+2026-04-02 06:29:34,504 - truthseeker-live - INFO - 📋 Commands: ['help', 'live_status', 'join', 'leave']
+2026-04-02 06:29:34,504 - truthseeker-live - INFO - 🔌 Intents - message_content: True, voice_states: True
+2026-04-02 06:42:54,465 - discord.client - INFO - Cleaning up tasks.
+2026-04-02 06:42:54,466 - discord.client - INFO - Cleaning up after 1 tasks.
+2026-04-02 06:42:54,467 - discord.client - INFO - All tasks finished cancelling.
+2026-04-02 06:42:54,467 - discord.client - INFO - Closing the event loop.

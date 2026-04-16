@@ -1,0 +1,83 @@
+#!/bin/bash
+# Truthseeker Commands Skill - Route !commands to appropriate handlers
+# This skill is called by OpenClaw Gateway when !commands are detected
+
+COMMAND=$1
+shift
+ARGS="$@"
+
+case "$COMMAND" in
+    "analyse")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/analyse.py "$ARGS"
+        ;;
+    "roast")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/roast.py "$ARGS"
+        ;;
+    "tarot")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/tarot.py "$ARGS"
+        ;;
+    "dogma")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/dogma.py "$ARGS"
+        ;;
+    "pattern")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/pattern.py "$ARGS"
+        ;;
+    "atman")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/atman.py "$ARGS"
+        ;;
+    "entropy")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/entropy.py "$ARGS"
+        ;;
+    "resonanz")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/resonanz.py "$ARGS"
+        ;;
+    "synchronicity")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/synchronicity.py "$ARGS"
+        ;;
+    "mirrorself")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/mirrorself.py "$ARGS"
+        ;;
+    "liminal")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/liminal.py "$ARGS"
+        ;;
+    "collapse")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/collapse.py "$ARGS"
+        ;;
+    "void")
+        python3 ~/.openclaw/workspace/skills/truthseeker/commands/void.py "$ARGS"
+        ;;
+    "sync")
+        cat ~/.openclaw/workspace/self-improving/discord-bridge/shared-context.md | tail -30
+        ;;
+    "heartbeat")
+        echo "[HEARTBEAT] OpenClaw Gateway ist online."
+        echo "[STATUS] Commands: Direktverarbeitung aktiv."
+        echo "[BRIDGE] Bereit für SYNC."
+        ;;
+    "help"|"cmds")
+        echo "Truthseeker v6.4 Commands (Direct Processing)"
+        echo ""
+        echo "!bild <prompt> - Bildgenerierung"
+        echo "!kaomoji [tag] - Kaomojis"
+        echo "!tts <text> - Text-to-Speech"
+        echo "!analyse - Diskurs-Audit"
+        echo "!roast <@user> - System-Roast"
+        echo "!tarot - Archetypen-Analyse"
+        echo "!dogma [text] - Dogmatische Strukturen"
+        echo "!pattern [@user] - Schreibmuster"
+        echo "!atman [@user] - ATMAN-Profil"
+        echo "!entropy - Channel-Thermodynamik"
+        echo "!resonanz @user - Systemische Kompatibilitaet"
+        echo "!synchronicity - Zufaellige Verbindungen"
+        echo "!mirrorself - Eigene Wiederholungen"
+        echo "!liminal - Luminale Aesthetik"
+        echo "!collapse <thema> - Gedanken-Crash"
+        echo "!void - Das Nichts"
+        echo "!sync - Bridge-Status"
+        echo "!heartbeat - Heartbeat-Status"
+        ;;
+    *)
+        echo "Unbekannter Command: $COMMAND"
+        echo "Nutze !help fuer Liste."
+        ;;
+esac

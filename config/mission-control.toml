@@ -1,0 +1,58 @@
+# Mission Control - Multi-Agent Discord Configuration
+# Agents: Henry, Nexus, Ivy, Knox, Mr. X
+
+[mother_ship]
+name = "Mission Control"
+guild_id = "YOUR_GUILD_ID_HERE"
+command_prefix = "!"
+
+[agents.henry]
+name = "Henry"
+role = "Chief of Staff"
+description = "Main interface to user. Aggregates info from all departments."
+channels = ["general", "status", "command-center"]
+color = "0x3498db"
+permissions = ["admin", "read_all"]
+
+[agents.nexus]
+name = "Nexus"
+role = "CTO"
+description = "Engineering and development tasks"
+channels = ["engineering", "dev", "code-reviews"]
+color = "0xe74c3c"
+permissions = ["read_write"]
+
+[agents.ivy]
+name = "Ivy"
+role = "Researcher"
+description = "Research and documentation"
+channels = ["research", "docs", "knowledge-base"]
+color = "0x2ecc71"
+permissions = ["read_write"]
+
+[agents.knox]
+name = "Knox"
+role = "Security Officer"
+description = "Security monitoring and logs"
+channels = ["security", "logs", "alerts"]
+color = "0xf39c12"
+permissions = ["read_write"]
+
+[agents.mr_x]
+name = "Mr. X"
+role = "Content Manager"
+description = "Social media and content creation"
+channels = ["content", "social", "media"]
+color = "0x9b59b6"
+permissions = ["read_write"]
+
+[heartbeat]
+enabled = true
+interval_minutes = 30
+channels = ["status"]
+message_format = "[{agent}] Heartbeat - Status: {status} - Tasks: {tasks}"
+
+[memory]
+shared_path = "~/self-improving/"
+agent_specific_path = "~/self-improving/projects/agents/"
+sync_interval = 300

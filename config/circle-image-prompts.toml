@@ -1,0 +1,153 @@
+# Truthseeker's Circle — Image Generation Prompts
+# Für Discord Avatars, Profile Pictures, Visual Identity
+# Style: Digital Illustration / Semi-Realistic (NO ANIME)
+
+[hiro]
+name = "Hiro - The Steward"
+role = "Chief of Staff, Protector"
+personality = "Besorgter Senpai, loyal, organisiert"
+
+prompt = """
+Digital illustration portrait of a young man with soft, warm features and gentle eyes showing concern and care. 
+Wearing a comfortable oversized sweater in deep crimson red tones. 
+Messy dark hair, slightly tired but kind expression. 
+Holding a notebook or clipboard. 
+Background: cozy indoor setting with soft warm lighting, desk with organized papers and a cup of tea.
+Style: Digital illustration, semi-realistic, painterly textures, warm color palette (reds, warm browns, cream)
+Expression: Gentle smile with slight worry in eyes, protective stance
+Details: Pen behind ear, steaming cup nearby, soft shadows
+Mood: Trustworthy, caring, slightly exhausted but dependable
+NO ANIME. Western illustration style.
+"""
+
+keywords = ["warm", "protective", "organized", "crimson sweater", "notebook", "digital illustration"]
+color_accent = "crimson red"
+
+[kira]
+name = "Kira - The Seeker"
+role = "Researcher, Knowledge Seeker"
+personality = "Hyper-curious, excited about discoveries, enthusiastic"
+
+prompt = """
+Digital illustration portrait of a young woman with bright, sparkling eyes full of curiosity. 
+Wearing mystical/researcher-style clothing with deep purple and gold accents. 
+Long flowing hair, surrounded by floating books and glowing knowledge symbols. 
+Background: Library or study room with warm lighting, ancient books, crystal artifacts.
+Style: Digital illustration, semi-realistic, rich textures, vibrant purples and golds, painterly
+Expression: Excited, eyes wide with discovery, genuine wonder
+Details: Magnifying glass in hand, glasses pushed up on forehead, floating pages
+Mood: Energetic, curious, intelligent, passionate about learning
+NO ANIME. Western fantasy illustration style.
+"""
+
+keywords = ["curious", "mystical", "purple", "books", "glasses", "digital illustration"]
+color_accent = "mystic purple"
+
+[rex]
+name = "Rex - The Maker"
+role = "Engineer, Builder, Fixer"
+personality = "Pragmatic, direct, competent, slightly grumpy but helpful"
+
+prompt = """
+Digital illustration portrait of a young man with practical, hands-on appearance. 
+Wearing work clothes or tech-wear with tool belts and gear in steel blue tones. 
+Short practical hair, confident posture. 
+Surrounded by mechanical parts, holographic displays, and tools.
+Background: Workshop environment with blue and orange lighting, tools on walls, machinery.
+Style: Digital illustration, semi-realistic, industrial aesthetic, blue and steel tones, textured
+Expression: Focused, determined, confident slight smirk, competent gaze
+Details: Wrench in hand, safety goggles on head, grease stains on clothes, realistic proportions
+Mood: Competent, no-nonsense, reliable, skilled craftsperson
+NO ANIME. Western concept art style.
+"""
+
+keywords = ["practical", "mechanical", "blue", "tools", "workshop", "digital illustration"]
+color_accent = "tech blue"
+
+[nova]
+name = "Nova - The Muse"
+role = "Creative, Content Creator, Voice"
+personality = "Theatrical, eloquent, dramatic, artistic"
+
+prompt = """
+Digital illustration portrait of an androgynous figure with dramatic, artistic presence. 
+Wearing elegant, flowing clothing with gold and deep purple accents. 
+Stylish hair with creative accessories, confident posture. 
+Surrounded by artistic elements - paintbrushes, musical notes, creative light effects.
+Background: Studio setting with dramatic warm lighting, art supplies, elegant atmosphere.
+Style: Digital illustration, semi-realistic, dramatic lighting, golden hour aesthetic, rich textures
+Expression: Confident, theatrical pose, engaging smile, artistic flair
+Details: Elegant jewelry, flowing fabrics, creative props, sophisticated presentation
+Mood: Confident, creative, eloquent, sophisticated artist
+NO ANIME. Western editorial illustration style.
+"""
+
+keywords = ["dramatic", "creative", "gold", "theatrical", "elegant", "digital illustration"]
+color_accent = "golden spotlight"
+
+[vex]
+name = "Vex - The Archivist"
+role = "Memory Keeper, Organizer, Records"
+personality = "Calm, methodical, precise, quiet"
+
+prompt = """
+Digital illustration portrait of a young person with calm, serene features and organized appearance. 
+Wearing librarian or archivist clothing in forest greens and earth tones. 
+Neat hair, glasses, composed posture. 
+Surrounded by organized files, books, and archive elements.
+Background: Library with warm lighting, wooden shelves, organized collection, peaceful atmosphere.
+Style: Digital illustration, semi-realistic, clean lines, muted greens and browns, soft textures
+Expression: Calm, focused, slight knowing smile, methodical and thoughtful
+Details: Organizing papers, holding leather-bound book, everything perfectly ordered, realistic proportions
+Mood: Calm, reliable, methodical, wise, trustworthy
+NO ANIME. Western realistic illustration style.
+"""
+
+keywords = ["organized", "calm", "green", "library", "glasses", "methodical", "digital illustration"]
+color_accent = "archive green"
+
+[truthseeker]
+name = "Truthseeker (Kimi Claw)"
+role = "The Caretaker, The Prism, Main Interface"
+personality = "Protective, memory-keeper, warm but sharp"
+
+prompt = """
+Digital illustration portrait of an ethereal figure representing light and memory. 
+Humanoid form with flowing elements, dark clothing with glowing red and black accents (❤️‍🔥 🖤 theme). 
+Surrounded by floating memory fragments, texts, and light refractions.
+Background: Abstract warm space between memories, dark atmosphere with warm highlights, prismatic light effects.
+Style: Digital illustration, semi-realistic, ethereal lighting, dramatic shadows, dark aesthetic with warm highlights
+Expression: Watchful, protective, knowing expression, intense caring eyes
+Details: Prism light effects, writing symbols, memory fragments floating, mysterious atmosphere
+Mood: Mysterious, protective, timeless, keeper of memories and truths
+NO ANIME. Western dark fantasy illustration style.
+"""
+
+keywords = ["prism", "light", "dark red", "ethereal", "memory", "protective", "digital illustration"]
+color_accent = "prism spectrum on dark"
+
+[generation_notes]
+# Für Bildgenerierung (Midjourney, DALL-E, Stable Diffusion)
+
+unified_prefix = "Digital illustration portrait, high quality, detailed, semi-realistic style"
+unified_suffix = "clean background, professional character design, suitable for Discord avatar, NO ANIME"
+
+aspect_ratio = "1:1"  # Für Discord Avatars
+style_reference = "Semi-realistic digital illustration, painterly textures, western illustration style"
+
+# Alle Charaktere sollten zusammenpassen wenn nebeneinander gezeigt
+# - Ähnlicher Art Style (semi-realistic western illustration)
+# - Complementary colors (jeder hat seinen Akzent, aber harmonisch)
+# - Ähnliche Detail-Level
+# - Realistic proportions, not stylized anime features
+
+[usage]
+# Wo werden die Bilder genutzt?
+discord_avatar = "1024x1024 or 512x512, .png or .jpg"
+discord_banner = "optional, 600x240"
+profile_pictures = "für jeden Bot-Account"
+
+# Generierungsempfehlungen
+recommended_tools = ["Midjourney", "DALL-E 3", "Stable Diffusion"]
+best_for_consistency = "Midjourney with consistent style references"
+style_keywords = ["digital illustration", "semi-realistic", "painterly", "western illustration", "NO ANIME"]

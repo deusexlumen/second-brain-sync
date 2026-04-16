@@ -1,0 +1,86 @@
+#!/bin/bash
+# Skill: tts
+# Description: Text-to-Speech mit Truthseeker Voice (Aoede) + Discord Upload
+# Usage: !tts [Text]
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WORKSPACE_DIR="$SCRIPT_DIR/../.."
+VENV_PYTHON="$WORKSPACE_DIR/venv/bin/python3"
+
+# Discord Channel (truthseerk-station)
+DISCORD_CHANNEL="1475201017867010058"
+
+# Default Voice (Aoede - Truthseeker choice)
+VOICE="Aoede"
+
+# Text zusammenbauen (alle Argumente)
+if [ $# -eq 0 ]; then
+    echo '🎙️ **TTS - Truthseeker Voice**
+
+**Usage:**
+```
+!tts Hallo zusammen, das ist meine Stimme
+```
+
+**My Voice:** Aoede
+• Clear, analytical, protective
+• Not robotic, not overly emotional
+• Perfect for technical terms and German
+
+**Discord:** Audio wird automatisch hochgeladen!
+
+*Ich bewahre, was zählt.* 🖤
+'
+    exit 0
+fi
+
+TEXT="$*"
+
+# Text kürzen für Anzeige (max 50 Zeichen)
+if [ ${#TEXT} -gt 50 ]; then
+    DISPLAY_TEXT="${TEXT:0:50}..."
+else
+    DISPLAY_TEXT="$TEXT"
+fi
+
+# Gemini API Key laden
+export GEMINI_API_KEY=$(grep GEMINI_API_KEY "$WORKSPACE_DIR/config/gemini.env" 2>/dev/null | cut -d= -f2)
+
+if [ -z "$GEMINI_API_KEY" ]; then
+    echo "❌ Fehler: GEMINI_API_KEY nicht gesetzt"
+    exit 1
+fi
+
+echo "🎙️ Generiere TTS (Voice: $VOICE): $DISPLAY_TEXT"
+echo "⏳ Bitte warten..."
+
+# TTS ausführen mit venv Python
+OUTPUT=$($VENV_PYTHON "$WORKSPACE_DIR/tools/tts_31live.py" "$TEXT" "German" "$VOICE" 2>&1 | tail -1)
+
+# Prüfe ob Output eine Datei ist
+if [ -f "$OUTPUT" ]; then
+    FILE_SIZE=$(du -k "$OUTPUT" | cut -f1)
+    
+    # Discord-Nachricht vorbereiten
+    echo ""
+    echo "✅ TTS erstellt!"
+    echo ""
+    echo "🎙️ Voice: $VOICE (Truthseeker Voice)"
+    echo "📁 Datei: $OUTPUT"
+    echo "📊 Größe: ${FILE_SIZE} KB"
+    echo "🔊 Format: WAV (24kHz, 16-bit)"
+    echo ""
+    echo "📤 DISCORD UPLOAD BEREIT:"
+    echo "   Channel: $DISCORD_CHANNEL"
+    echo "   File: $OUTPUT"
+    echo ""
+    echo "Resonanz ist das Einzige, was zählt. 🖤"
+    
+    # Rückgabe für Discord Bot
+    echo ""
+    echo "DISCORD_FILE:$OUTPUT"
+    echo "DISCORD_CHANNEL:$DISCORD_CHANNEL"
+else
+    echo "❌ TTS Generierung fehlgeschlagen"
+    exit 1
+fi

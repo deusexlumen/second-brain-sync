@@ -1,0 +1,11 @@
+2026-04-02 07:13:05,925 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-04-02 07:13:05,925 - discord.client - WARNING - davey is not installed, voice will NOT be supported
+[2026-04-02 07:13:05] [INFO    ] discord.client: logging in using static token
+2026-04-02 07:13:05,926 - discord.client - INFO - logging in using static token
+[2026-04-02 07:13:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 8c78ad291b773cafa5f2099b13130cf4).
+2026-04-02 07:13:07,549 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 8c78ad291b773cafa5f2099b13130cf4).
+2026-04-02 07:13:09,649 - truthseeker-live - INFO - ✅ Truthseeker LIVE bereit als Truthseeker#1628
+2026-04-02 07:13:09,649 - truthseeker-live - INFO - 🎙️ Bidirektionale Gemini 3.1 Konversation aktiviert
+2026-04-02 07:13:09,649 - truthseeker-live - INFO - 🔊 Audio Pipeline: Discord ⟷ Gemini Live
+2026-04-02 07:13:09,649 - truthseeker-live - INFO - 📋 Commands: ['help']
+2026-04-02 07:13:09,649 - truthseeker-live - INFO - 🔌 Intents - message_content: True, voice_states: True

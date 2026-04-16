@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "skills": {
+    "discord": {
+      "version": "1.0.1",
+      "installedAt": 1774787289983
+    },
+    "gemini-web-search": {
+      "version": "1.0.0",
+      "installedAt": 1774787641337
+    },
+    "nano-pdf": {
+      "version": "1.0.0",
+      "installedAt": 1774787761761
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1774788302594
+    },
+    "self-improving": {
+      "version": "1.2.16",
+      "installedAt": 1774800914863
+    },
+    "playwright": {
+      "version": "1.0.3",
+      "installedAt": 1774789263770
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1775171521401
+    },
+    "proactivity": {
+      "version": "1.0.1",
+      "installedAt": 1775307303399
+    }
+  }
+}

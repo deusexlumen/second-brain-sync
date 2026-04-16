@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+"""
+Bild-Generierung Skill für Truthseeker v6.4
+Trigger: !bild <prompt> [--enhance]
+Uses Pollinations.ai API (requires API key)
+"""
+
+import sys
+import os
+import urllib.parse
+import random
+import requests
+import base64
+from pathlib import Path
+
+# Pollinations API configuration
+POLLINATIONS_IMAGE_URL = "https://image.pollinations.ai/prompt"
+
+# Check for --enhance flag
+args = sys.argv[1:]
+enhance_mode = False
+
+if '--enhance' in args:
+    enhance_mode = True
+    args.remove('--enhance')
+
+if '-e' in args:
+    enhance_mode = True
+    args.remove('-e')
+
+prompt = ' '.join(args).strip()
+
+if not prompt:
+    print("⚠️ Bitte gib einen Prompt an. Beispiel: !bild a cyberpunk city")
+    print("Mit Enhancement: !bild a cyberpunk city --enhance")
+    sys.exit(1)
+
+original_prompt = prompt
+
+# Enhance mode: Add quality modifiers
+if enhance_mode:
+    enhancements = [
+        "professional photography, highly detailed, sharp focus, natural lighting",
+        "digital art, cinematic lighting, 8k resolution, ultra detailed",
+        "concept art, atmospheric lighting, detailed textures, high quality",
+        "photorealistic, studio lighting, crisp details, masterful composition",
+        "artstation trending, dramatic lighting, intricate details, vivid colors"
+    ]
+    
+    random_enhancement = random.choice(enhancements)
+    prompt = f"{original_prompt}, {random_enhancement}"
+    
+    print(f"✨ Prompt enhanced: '{original_prompt}' → '{prompt}'")
+    print()
+
+# Load API key from config
+config_path = Path.home() / ".openclaw" / "config" / "pollinations.env"
+api_key = None
+
+if config_path.exists():
+    with open(config_path) as f:
+        for line in f:
+            if line.startswith("POLLINATIONS_API_KEY="):
+                api_key = line.strip().split("=", 1)[1]
+                break
+
+# Check for environment variable
+if not api_key:
+    api_key = os.environ.get("POLLINATIONS_API_KEY")
+
+if not api_key:
+    print("⚠️ POLLINATIONS_API_KEY nicht gefunden!")
+    print("Füge den Key hinzu: ~/.openclaw/config/pollinations.env")
+    print("Format: POLLINATIONS_API_KEY=dein-key-hier")
+    sys.exit(1)
+
+# Build direct image URL with API key as query parameter
+# Format: https://image.pollinations.ai/prompt/{encoded_prompt}?width=1024&height=1024&seed=X&nologo=true&key={api_key}
+encoded_prompt = urllib.parse.quote(prompt, safe='')
+seed = random.randint(0, 999999)
+
+image_url = f"{POLLINATIONS_IMAGE_URL}/{encoded_prompt}?width=1024&height=1024&seed={seed}&nologo=true&key={api_key}"
+
+# Test if URL is accessible
+try:
+    response = requests.head(image_url, timeout=10)
+    if response.status_code not in [200, 302]:
+        print(f"⚠️ Pollinations Server meldet Status {response.status_code}")
+        print("Der Service könnte überlastet sein. Bitte später erneut versuchen.")
+        sys.exit(1)
+except Exception as e:
+    print(f"⚠️ Verbindungsfehler: {e}")
+    print("Pollinations scheint nicht erreichbar zu sein.")
+    sys.exit(1)
+
+# Output
+print("**🖼️ Bild generiert**")
+print()
+print(f"![{original_prompt}]({image_url})")
+print()
+
+# Comments based on mode
+if enhance_mode:
+    comments = [
+        "Enhancement aktiviert – das sollte noch besser aussehen ✨",
+        "Mit KI-Upgrade – hoffentlich worth it 🚀",
+        "Prompt gepimpt, jetzt bin ich gespannt 🤔",
+        "Enhanced Edition – Limited Release 💎",
+        "Die KI hat nachgebessert – let's see 🔥",
+    ]
+else:
+    comments = [
+        "Ziemlich beeindruckend ✨",
+        "Das sieht... interessant aus 🤔",
+        "Nicht schlecht, diese KI 🎨",
+        "Da hat sich Mühe gegeben ☕",
+        "Faszinierende Komposition 🔥",
+        "Das könnte ein Album-Cover sein 🎵",
+        "Visuell stark 💪",
+        "Da steckt Potential drin 💎",
+        "Würde ich an die Wand hängen 🖼️",
+        "Künstlerisch wertvoll... oder so 😏",
+        "Das erinnert mich an was... 🤔",
+        "Prime Node-approved? 🖤",
+        "Eindeutig generiert, aber cool 🤖",
+        "Resonanz mit Pixeln 📊",
+        "System-theoretisch ästhetisch ✍️",
+    ]
+
+print(random.choice(comments))

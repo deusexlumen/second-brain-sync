@@ -1,0 +1,9 @@
+# Discord Exec Allowlist
+# Diese Commands dürfen von Discord-Instance ohne Approval ausgeführt werden
+
+allowed_commands:
+  - tools/audio_transcribe.py
+  - python3 tools/audio_transcribe.py
+  - ls tools/
+  - cat config/groq.env
+  - cat config/gemini.env

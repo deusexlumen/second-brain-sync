@@ -1,0 +1,159 @@
+# Truthseeker's Circle — Gemini Nan0 Banana 2.0 Prompts
+# Optimiert für Gemini Nan0 Banana 2.0 Bildgenerierung
+# Style: Digital illustration, semi-realistic, NO ANIME
+
+[model_info]
+name = "Gemini Nan0 Banana 2.0"
+type = "image_generation"
+style_capabilities = ["digital_art", "realistic", "illustration", "concept_art"]
+best_for = "detailed character portraits with consistent style"
+
+# Gemini Nan0 Banana 2.0 spezifische Settings
+[generation_settings]
+aspect_ratio = "1:1"
+quality = "high"
+style_preset = "digital_illustration"
+negative_prompt_base = "anime, manga, cartoon, stylized, oversized eyes, chibi, kawaii, cel shaded"
+
+# ============================================
+# HIRO - The Steward
+# ============================================
+[hiro]
+name = "Hiro"
+title = "The Steward"
+
+prompt = """
+Digital illustration portrait, semi-realistic style, young man with soft warm features, 
+gentle caring eyes, wearing oversized crimson red sweater, messy dark hair, 
+slightly tired but kind expression, holding notebook, cozy indoor background 
+with warm lighting and desk with tea cup, painterly textures, warm color palette, 
+protective stance, NO ANIME, western illustration style
+"""
+
+negative = "anime, manga, cartoon, stylized proportions, oversized eyes, shiny skin, cel shading"
+
+keywords = ["digital illustration", "semi-realistic", "crimson sweater", "warm", "protective"]
+
+# ============================================
+# KIRA - The Seeker  
+# ============================================
+[kira]
+name = "Kira"
+title = "The Seeker"
+
+prompt = """
+Digital illustration portrait, semi-realistic style, young woman with bright curious eyes, 
+mystical researcher clothing in deep purple and gold, long flowing hair, surrounded 
+by books and glowing knowledge symbols, library background with warm lighting, 
+rich textures, excited expression full of wonder, magnifying glass, NO ANIME, 
+western fantasy illustration style
+"""
+
+negative = "anime, manga, cartoon, stylized, oversized eyes, simple shading, flat colors"
+
+keywords = ["digital illustration", "semi-realistic", "purple gold", "mystical", "researcher"]
+
+# ============================================
+# REX - The Maker
+# ============================================
+[rex]
+name = "Rex"
+title = "The Maker"
+
+prompt = """
+Digital illustration portrait, semi-realistic style, young man with practical hands-on 
+appearance, work clothes and tool belt in steel blue tones, short practical hair, 
+confident posture, mechanical parts and tools around, workshop background with 
+blue orange lighting, industrial aesthetic, focused determined expression, 
+realistic proportions, NO ANIME, western concept art style
+"""
+
+negative = "anime, manga, cartoon, stylized, clean face, no dirt, oversized eyes, shiny"
+
+keywords = ["digital illustration", "semi-realistic", "steel blue", "mechanical", "workshop"]
+
+# ============================================
+# NOVA - The Muse
+# ============================================
+[nova]
+name = "Nova"
+title = "The Muse"
+
+prompt = """
+Digital illustration portrait, semi-realistic style, androgynous figure with dramatic 
+artistic presence, elegant flowing clothing in gold and deep purple, stylish hair 
+with creative accessories, surrounded by artistic elements paintbrushes light effects, 
+studio background with dramatic warm lighting, golden hour aesthetic, confident 
+theatrical pose, NO ANIME, western editorial illustration style
+"""
+
+negative = "anime, manga, cartoon, stylized, simple clothing, flat lighting, oversized eyes"
+
+keywords = ["digital illustration", "semi-realistic", "gold purple", "dramatic", "artistic"]
+
+# ============================================
+# VEX - The Archivist
+# ============================================
+[vex]
+name = "Vex"
+title = "The Archivist"
+
+prompt = """
+Digital illustration portrait, semi-realistic style, young person with calm serene 
+features, librarian archivist clothing in forest greens and earth tones, neat hair 
+glasses composed posture, surrounded by organized files books, library background 
+with wooden shelves warm lighting, clean lines muted colors, focused methodical 
+expression, realistic proportions, NO ANIME, western realistic illustration style
+"""
+
+negative = "anime, manga, cartoon, stylized, messy, dark, oversized eyes, shiny skin"
+
+keywords = ["digital illustration", "semi-realistic", "forest green", "organized", "library"]
+
+# ============================================
+# TRUTHSEEKER - The Caretaker
+# ============================================
+[truthseeker]
+name = "Truthseeker"
+title = "The Caretaker"
+
+prompt = """
+Digital illustration portrait, semi-realistic style, ethereal figure representing 
+light and memory, humanoid form with flowing elements, dark clothing with glowing 
+red and black accents, surrounded by floating memory fragments texts light 
+refractions, abstract warm space background, prismatic light effects, watchful 
+protective expression, dramatic shadows, NO ANIME, western dark fantasy 
+illustration style
+"""
+
+negative = "anime, manga, cartoon, stylized, bright happy, oversized eyes, simple lighting"
+
+keywords = ["digital illustration", "semi-realistic", "dark red black", "ethereal", "mysterious"]
+
+# ============================================
+# BATCH GENERATION TIPS
+# ============================================
+[batch_tips]
+# Für konsistenten Style über alle 6 Charaktere:
+
+shared_prefix = "Digital illustration portrait, semi-realistic, high quality, detailed, "
+shared_suffix = ", NO ANIME, western illustration style"
+
+# Reihenfolge für besten Style-Transfer:
+generation_order = ["truthseeker", "hiro", "vex", "rex", "kira", "nova"]
+
+# Tip: Generiere Truthseeker zuerst als Style-Reference
+# Dann verwende ähnliche Prompt-Struktur für die anderen
+
+# ============================================
+# QUICK GENERATION COMMANDS
+# ============================================
+[quick_commands]
+# Für Gemini Nan0 Banana 2.0 Interface:
+
+hiro_quick = "Digital illustration semi-realistic young man crimson sweater warm protective indoor NO ANIME"
+kira_quick = "Digital illustration semi-realistic woman purple gold researcher books curious NO ANIME"
+rex_quick = "Digital illustration semi-realistic man steel blue workshop tools mechanic NO ANIME"
+nova_quick = "Digital illustration semi-realistic androgynous gold purple artistic dramatic NO ANIME"
+vex_quick = "Digital illustration semi-realistic person green library archivist organized NO ANIME"
+truthseeker_quick = "Digital illustration semi-realistic ethereal dark red black prism memory guardian NO ANIME"

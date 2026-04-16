@@ -1,0 +1,6 @@
+# Truthseeker LIVE Dependencies
+py-cord[voice]>=2.4.0
+opuslib
+websockets
+python-dotenv
+numpy

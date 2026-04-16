@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+"""
+Truthseeker TTS Engine (Phase 1)
+Nutzt gTTS als schnelle Lösung bis Gemini Live bereit ist
+"""
+
+import os
+import sys
+from pathlib import Path
+from gtts import gTTS
+
+OUTPUT_DIR = Path("/tmp/openclaw/tts_output")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+class TruthseekerTTS:
+    def speak(self, text: str, lang: str = "de", slow: bool = False) -> str:
+        """
+        Konvertiere Text zu Sprache mit gTTS
+        
+        Args:
+            text: Der zu sprechende Text
+            lang: Sprach-Code (de, en, etc.)
+            slow: Langsame Aussprache
+            
+        Returns:
+            Pfad zur MP3-Datei
+        """
+        try:
+            output_file = OUTPUT_DIR / f"tts_{os.urandom(4).hex()}.mp3"
+            
+            tts = gTTS(text=text, lang=lang, slow=slow)
+            tts.save(str(output_file))
+            
+            return str(output_file)
+            
+        except Exception as e:
+            print(f"❌ TTS Fehler: {e}", file=sys.stderr)
+            return None
+
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: tts_gtts.py '<text>' [lang]")
+        print("Sprachen: de (Deutsch), en (English), etc.")
+        sys.exit(1)
+    
+    text = sys.argv[1]
+    lang = sys.argv[2] if len(sys.argv) > 2 else "de"
+    
+    tts = TruthseekerTTS()
+    result = tts.speak(text, lang)
+    
+    if result:
+        print(result)
+    else:
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()

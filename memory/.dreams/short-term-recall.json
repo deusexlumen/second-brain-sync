@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-16T09:24:10.539Z",
+  "entries": {
+    "memory:memory/2026-04-10.md:1:61": {
+      "key": "memory:memory/2026-04-10.md:1:61",
+      "path": "memory/2026-04-10.md",
+      "startLine": 1,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "--- ## Update: YouTube Analyzer Skill - Persistiert (2026-04-10 17:44) **Status:** Kritischer Skill etabliert **Grund:** YouTube-Cookies sind kurzlebig, benötige persistente Lösung ### Erstellte Ressourcen **1. Tool:** `~/.openclaw/workspace/tools/youtube_analyzer.py` - Dual-Methoden: Invidious (5 Fallbacks) + YouTube Data API v3 - Extrahiert Video-ID automatisch aus allen URL-Formaten - Formatierte Ausgabe (Titel, Kanal, Views, Beschreibung) **2. Doku:** `~/.openclaw/workspace/config/youtube-setup.md` - Setup-Anleitung für YouTube API Key - Troubleshooting Guide - Beide Methoden dokumentiert ### Verwendung ```bash python3 ~/.openclaw/workspace/tools/youtube_analyzer.py \"https://yout",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.1273994205564406,
+      "maxScore": 0.7178213087886718,
+      "firstRecalledAt": "2026-04-11T21:20:31.837Z",
+      "lastRecalledAt": "2026-04-11T21:21:53.535Z",
+      "queryHashes": [
+        "bee168790466",
+        "d2429afa3c97"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "youtube-cookies",
+        "dual-methoden",
+        "video-id",
+        "url-formaten",
+        "setup-anleitung",
+        "update",
+        "youtube",
+        "analyzer"
+      ]
+    },
+    "memory:memory/2026-04-10.md:288:333": {
+      "key": "memory:memory/2026-04-10.md:288:333",
+      "path": "memory/2026-04-10.md",
+      "startLine": 288,
+      "endLine": 333,
+      "source": "memory",
+      "snippet": "**Status:** Pending - Waiting for repo list **Safety Rules:** - Keep: deusexlumen/Lyra-v2.0 ✅ - Delete: All other Lyra repos (after confirmation) - Method: One-by-one with user approval --- --- ## Update: GitHub Repository Cleanup - COMPLETED (2026-04-10 22:22) **Task:** Delete all \"Lyra\" repositories EXCEPT `Lyra-v2.0` **Requested by:** Deus Ex Lumen (Prime Node) **Status:** ✅ COMPLETED ### Sicherheits-Protokoll - ✅ `Lyra-v2.0` explizit als PROTECTED markiert - ✅ Alle anderen Lyra-Repos identifiziert und gelöscht - ✅ Bestätigung vom User eingeholt ### Gelöschte Repositories (8 total) | # | Repository | Status | |---|------------|--------| | 1 | `deusexlumen/lyra-v20-app` | ✅ Deleted",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.35156560242176055,
+      "maxScore": 0.35156560242176055,
+      "firstRecalledAt": "2026-04-13T18:44:15.088Z",
+      "lastRecalledAt": "2026-04-13T18:44:15.088Z",
+      "queryHashes": [
+        "2cf4683884f0"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "deusexlumen/lyra-v2.0",
+        "one-by-one",
+        "lyra-v2.0",
+        "sicherheits-protokoll",
+        "lyra-repos",
+        "deusexlumen/lyra-v20-app",
+        "status",
+        "pending"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:23": {
+      "key": "memory:memory/2026-04-13.md:1:23",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "# Session Memory — 2026-04-13 ## Critical Correction: \"Schweiß und Tränen\" Mandate - **Source:** Prime Node audio feedback after REM_STATE delivery. - **Issue:** REM_STATE fell back into old patterns — `testsrc` + filters, timer restarts without narrative meaning, no real dynamic scenes. - **Mandate:** Maximum effort and time investment over efficiency. Real clips, real compositions, no filter-crutches. - **Status:** Already persisted to `~/self-improving/corrections.md`. ## Project: Ghost_in_the_Air [Alt] — Video Production (Restarted) - **Approach:** Using real video clips provided by Prime Node after stock-site scraping (Pollinations rate-limited, Pixabay Cloudflare-blocked) proved unre",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.3510882675647735,
+      "maxScore": 0.3510882675647735,
+      "firstRecalledAt": "2026-04-16T09:24:10.539Z",
+      "lastRecalledAt": "2026-04-16T09:24:10.539Z",
+      "queryHashes": [
+        "321158f9b08e"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "rem-state",
+        "filter-crutches",
+        "self-improving/corrections.md",
+        "ghost-in-the-air",
+        "stock-site",
+        "rate-limited",
+        "cloudflare-blocked",
+        "critical"
+      ]
+    }
+  }
+}

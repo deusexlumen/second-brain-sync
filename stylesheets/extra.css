@@ -1,0 +1,99 @@
+/* Cyber-Notion Custom CSS for WikiMD */
+
+/* Grid Cards Styling */
+.grid.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.grid.cards > * {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 8px;
+    padding: 1rem;
+    background: var(--md-default-bg-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid.cards > *:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.grid.cards h2, .grid.cards h3 {
+    margin-top: 0;
+    color: var(--md-primary-fg-color);
+}
+
+/* Admonitions Enhancement */
+.md-typeset .admonition {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.md-typeset .admonition.abstract {
+    border-left-color: #7c4dff;
+}
+
+.md-typeset .admonition.abstract > .admonition-title {
+    background-color: rgba(124, 77, 255, 0.1);
+}
+
+.md-typeset .admonition.danger {
+    border-left-color: #ff1744;
+}
+
+.md-typeset .admonition.danger > .admonition-title {
+    background-color: rgba(255, 23, 68, 0.1);
+}
+
+/* Wiki Links Styling */
+a[href^="[["] {
+    color: var(--md-accent-fg-color);
+    text-decoration: underline dotted;
+}
+
+a[href^="[["]:hover {
+    text-decoration: underline;
+}
+
+/* Code Blocks */
+.md-typeset code {
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+}
+
+.md-typeset pre {
+    border-radius: 8px;
+}
+
+/* Tables */
+.md-typeset table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.md-typeset th {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    font-weight: 600;
+}
+
+/* Tags */
+.md-tag {
+    background: var(--md-accent-fg-color--transparent);
+    color: var(--md-accent-fg-color);
+    border-radius: 12px;
+    padding: 0.2em 0.6em;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Dark Mode Adjustments */
+[data-md-color-scheme="slate"] .grid.cards > * {
+    background: var(--md-code-bg-color);
+    border-color: var(--md-default-fg-color--lightest);
+}
