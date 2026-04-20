@@ -49,6 +49,16 @@ tags: [arbatel, magie, system, trithemius, enochian, goetia]
     
     [:octicons-arrow-right-24: Geographie](geographie.md)
 
+-   :fontawesome-solid-eye: **CIA Gateway Process**
+    
+    ---
+    
+    Stargate Project Remote Viewing Workbook (1977).
+    Bewusstseinsexpansion, Focus Levels, Hemi-Sync.
+    Parallelen zum Arbatel-System.
+    
+    [:octicons-arrow-right-24: Details](../cia-gateway/index.md)
+
 </div>
 
 ---
