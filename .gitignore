@@ -2,3 +2,51 @@
 # Embedded repositories
 emoticon_kaomoji_dataset/
 repos/ragnamaria.buch/
+
+# API Keys & Secrets (NEVER commit!)
+*.env
+config/*.env
+tokens.env
+.env.local
+.env.*.local
+
+# KIMI Project Files (not part of second-brain-sync)
+KIMI_*
+kimi_*
+assets/kimi/
+kimi_segments/
+renders/
+*.mp4
+*.mov
+*.avi
+
+# Downloads & Temp
+.kimi/downloads/
+/tmp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+site/
+dist/
+build/
+*.egg-info/
