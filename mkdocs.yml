@@ -7,18 +7,23 @@ nav:
   - 🔮 Magie & Okkultismus:
     - magie/index.md
     - Arbatel Magie System: magie/arbatel-magie-system.md
+    - Arbatel Artikel: magie/arbatel-magie-system-text.md
     - Arbatel Doku: magie/arbatel-doku.md
     - Salomonische Magie: magie/salomonische-magie/index.md
+    - Salomonische Magie Artikel: magie/salomonische-magie/salomonische-magie-text.md
   - 👁️ Paranormal & Geheimdienste:
     - paranormal/index.md
     - CIA Gateway Workbook: paranormal/cia-gateway-workbook.md
+    - CIA Gateway Artikel: paranormal/cia-gateway-workbook-text.md
     - 1764 Sky Phenomena: paranormal/1764-german-sky-phenomena.md
   - ⚙️ Technologie & KI:
     - technologie/index.md
     - NotebookLM Guides: technologie/notebooklm-guides.md
+    - NotebookLM Artikel: technologie/notebooklm-guides-text.md
   - 📚 Literatur & Kunst:
     - literatur/index.md
     - RagnaMaria Kapitel 1: literatur/ragnamaria/kapitel-01.md
+  - 🎨 Theme-Galerie: theme-galerie.md
   - 🎵 Inbox:
     - inbox/song-idee.md
   - 🏛️ Politik:
