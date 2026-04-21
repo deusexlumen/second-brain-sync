@@ -1,69 +1,20 @@
 ---
-title: "The Modularity of Mind — Central Systems"
-author: "Jerry A. Fodor"
-year: 1983
-original_publication: "Excerpt from 'The Modularity of Mind' (MIT Press)"
-tags: ["Modularität", "Zentralprozesse", "Kognitive Architektur", "Holismus", "Kognitionstheorie", "Fodor"]
-category: "wissenschaft-technik"
-created: 2026-04-22
-source_note: "Rekonstruiert aus Web-Recherche zu Mind Design III"
+aliases: [Modularitaet, Zentralprozesse, Input-Systeme, Fodor-Skepsis]
+tags: [#KI_Kognitive_Architektur, #Modularitaet, #Holismus, #Grenzmarkierung]
+date_added: 2026-04-22
+type: atomar
 ---
+# Fodor — Die Modularität des Geistes & das Problem der Zentralen Systeme (1983)
 
-# Central Systems — Jerry A. Fodor (1983)
+## Dekonstruierter Kern-Gedanke
+Fodor trennt das kognitive System in zwei Domänen: **Input-Systeme** (Sprache, Vision, Gesichtserkennung) sind modular — domain-spezifisch, informationell gekapselt, mandatory, schnell. **Zentrale Systeme** (Reasoning, Problem Solving, Belief Fixation) sind nicht-modular — domain-generalis, isotropisch (jede Belief kann jede andere relevant machen), querational. Fodor's radikale Behauptung: Wir verstehen Input-Systeme, aber wir haben **keine Theorie** der Zentralen Systeme. Das ist das eigentliche "Hard Problem" der Kognitionswissenschaft. Seine Skepsis ist keine Kapitulation, sondern eine **Grenzmarkierung**: Wo Module aufhören, beginnt das, was wir Intelligenz nennen.
 
-## Fodor's Große Unterscheidung
+## Ariadne-Brücken (Cross-Domain Links)
+- **Isomorphe Struktur:** [[hoppe-monarchie-demokratie-eigentum]] -> *Mechanik:* Fodor's Modularität ist eine **Eigentumsstruktur der Kognition**: Module "besitzen" ihre Daten (informationell gekapselt), Zentrale Systeme operieren auf "öffentlichem Eigentum" (alle Beliefs zugänglich). Hoppe's Monarchie ist ein modulares System (der König besitzt den Staat, kapselt Entscheidungen); Hoppe's Demokratie ist ein zentrales System (alle Beliefs/Wähler haben Zugriff auf alle Entscheidungen). Ist Fodor implizit ein **monarchistischer Kognitionswissenschaftler** — und wäre eine "demokratische Kognition" (alle Neuronen stimmen über alle Entscheidungen ab) chaotisch oder emergent intelligent?
+- **Spannungsfeld / Paradoxon:** [[konnikova-zwei-systeme]] -> *Konflikt:* Konnikova's Watson-System (schnell, intuitiv, modular-ähnlich) vs. Holmes-System (langsam, deliberativ, zentral-ähnlich) scheint Fodor's Dichotomie zu bestätigen. Aber: Das Holmes-System wird durch **Expertise zu einem Watson-System** (automatisiert). Fodor behauptet, Zentrale Systeme können nicht modular werden. Ist Expertise ein **Gegenbeispiel** zu Fodor — oder zeigt es, dass "Zentrale Systeme" gar nicht existieren, sondern nur sehr komplexe, noch nicht verstandene Module?
 
-Fodor trennt das kognitive System in zwei Domänen:
+## Synthetischer Impuls (Emergenz)
+> Wenn Large Language Models emergente "Central-System"-Eigenschaften zeigen (Chain-of-Thought, Cross-Domain Transfer) — ist das ein **Falsifikation** der Fodor'schen Grenzmarkierung? Oder sind LLMs nur statistische Approximationen von Modulen, die *wie* Zentrale Systeme aussehen, aber *keine* sind? Und könnten wir einen Test entwickfen (analog zum Turing-Test), der Modularität von Nicht-Modularität unterscheidet?
 
-### Input Systeme (Modular)
-- Sprache, Vision, Gesichtserkennung
-- **Informationell gekapselt**: Zugriff nur auf eigene Daten
-- **Domänenspezifisch**: Jeder Modul bearbeitet einen Input-Typ
-- **Mandatorisch**: Automatisch, nicht willentlich kontrollierbar
-- **Schnell, flach, lokal**: Shallow processing, keine tiefen Inferenzen
-
-### Central Systems (Nicht-Modular)
-- Reasoning, Problem Solving, Belief Fixation
-- **Informationell ungekapselt**: Zugriff auf alle Beliefs
-- **Domänen-generalis**: Quer zu allen Wissensdomänen
-- **Isotropisch**: Jede Belief kann jede andere relevant machen
-- **Querational**: Alle Beliefs müssen zueinander passen
-
-## Das Problem der Zentralen Systeme
-
-> *"The more global [...] a cognitive process is, the less anybody understands it."*
-
-Fodor's radikale Behauptung: Wir verstehen Input-Systeme (Peripherie), aber wir haben **keine Theorie** der Zentralen Systeme. Das ist das eigentliche "Hard Problem" der Kognitionswissenschaft.
-
-## Warum Central Systems so schwierig sind
-
-1. **Holismus**: Keine isolierte Analyse möglich
-2. **Kontextabhängigkeit**: Bedeutung hängt von unbegrenztem Kontext ab
-3. **Abduction**: Nicht-deduktive Inferenz (beste Erklärung)
-4. **Kreativität**: Neue Ideen entstehen nicht mechanisch
-
-## Fodor's Skepsis
-
-> *"I am not very optimistic about the future of cognitive science."*
-
-Fodor glaubt, dass die Zentralen Systeme prinzipiell nicht durch Computational-Theorien erfasst werden können – sie sind zu holistisch, zu kontext-sensitiv, zu "menschlich".
-
-## Moderne Herausforderung
-
-Large Language Models zeigen emergente Eigenschaften, die an "Central Systems" erinnern:
-
-- **In-Context Learning**: Neue Aufgaben aus wenigen Beispielen
-- **Chain-of-Thought**: Explizites Reasoning
-- **Cross-Domain Transfer**: Wissen aus einem Bereich in anderen anwenden
-
-Aber: Ist das wirklich "Central Systems", oder nur statistische Approximation?
-
-## Verwandte Einträge
-
-- [[mind-design-iii-sammlung]]
-- [[mind-design-haugeland-1996]]
-- [[turing-computing-machinery-1950]]
-
-## Wahrheitskern
-
-Fodor's Skepsis ist keine Kapitulation. Sie ist eine **Grenzmarkierung**. Wo Module aufhören, beginnt das, was wir Intelligenz nennen – und genau dort wird es philosophisch interessant. (⌐■_■)
+---
+**Ursprung:** Jerry A. Fodor — The Modularity of Mind (MIT Press, 1983), Excerpt "Central Systems"

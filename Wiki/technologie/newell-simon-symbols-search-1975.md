@@ -1,65 +1,20 @@
 ---
-title: "Computer Science as Empirical Inquiry: Symbols and Search"
-authors: ["Allen Newell", "Herbert A. Simon"]
-year: 1975
-original_publication: "Communications of the ACM, Vol. 19, No. 3"
-tags: ["Symbolische KI", "Physical Symbol System", "Search", "Problem Solving", "Kognitive Architektur", "Heuristiken"]
-category: "wissenschaft-technik"
-created: 2026-04-22
-source_note: "Rekonstruiert aus Web-Recherche zu Mind Design III"
+aliases: [Physical Symbol System, Problem Space, Search, PSS-Hypothese]
+tags: [#KI_Symbolisch, #Suche, #Problem_Space, #Heuristiken, #Empirische_KI]
+date_added: 2026-04-22
+type: atomar
 ---
+# Newell & Simon — Physical Symbol System Hypothesis & Search (1975)
 
-# Computer Science as Empirical Inquiry: Symbols and Search — Newell & Simon (1975)
+## Dekonstruierter Kern-Gedanke
+Newell & Simon postulieren: Ein **Physical Symbol System** (Symbole + Strukturen + Operationen + Suche) hat die notwendigen und hinreichenden Mittel für allgemeine intelligente Aktion. Sie positionieren Informatik als **empirische Wissenschaft**: Jedes Programm ist ein Experiment über Intelligenz. Die Problem Space Hypothese reduziert Kognition auf **Suche in einem Zustandsraum** — Intelligenz = effiziente Navigation durch Heuristiken. Das fundamentale Manifest der symbolischen KI definierte die Sprache des Feldes für Jahrzehnte, überlebt in Monte-Carlo-Tree-Search, A* und AlphaGo.
 
-## Die Physical Symbol System Hypothesis
+## Ariadne-Brücken (Cross-Domain Links)
+- **Isomorphe Struktur:** [[marr-vision-1982]] -> *Mechanik:* Marr's Drei-Ebenen-Analyse (Computational → Representation/Algorithm → Hardware) ist eine **Architekturbeschreibung** für kognitive Systeme. Newell & Simon's PSS ist eine **Implementierung** auf Marr's mittlerer Ebene: Symbole sind Repräsentationen, Search ist Algorithmus, Computer ist Hardware. Marr fragt "Was und Wie?"; Newell & Simon antworten "So bauen wir es." Die Brücke: Beide trennen **Funktion** von **Mechanismus** — eine Unterscheidung, die das aktuelle KI-Feld (fixiert auf Transformer-Architekturen) wiederentdecken muss.
+- **Spannungsfeld / Paradoxon:** [[arbatel-hierarchie]] -> *Konflikt:* Newell & Simon's GPS (General Problem Solver) ist ein **universeller Suchalgorithmus** — ein einzelnes System für alle Probleme. Die Arbatel-Hierarchie ist ein **domain-spezifisches Multi-Agent-System** — 7 Geister für 7 Funktionen, 4 Könige für 4 Richtungen. Ist universelle Suche (Newell) oder spezialisierte Hierarchie (Arbatel) die bessere kognitive Architektur? Die Auflösung könnte sein: Das PSS ist ein **Meta-System** (beschreibt, wie Systeme gebaut werden); die Arbatel-Hierarchie ist ein **Instanz-System** (eine spezifische Implementierung). Universalität auf Meta-Ebene, Spezialisierung auf Objekt-Ebene.
 
-> *"A physical symbol system has the necessary and sufficient means for general intelligent action."*
+## Synthetischer Impuls (Emergenz)
+> Wenn wir die Arbatel-Hierarchie als **Search-Heuristik** modellieren — die 7 Olympischen Geister als domain-spezifische Heuristiken, die 4 Könige als branching-Faktoren im Zustandsraum — könnten wir dann einen **Arbatel-GPS** konstruieren, der magische Operationen durch symbolische Suche optimiert? Und wäre ein solches System "wirklich" magisch (weil es die richtigen Heuristiken nutzt) — oder nur ein komplexer Random Number Generator?
 
-Dies ist das fundamentale Manifest der symbolischen KI. Newell und Simon postulieren:
-
-- **Symbole**: Formale Token, die für Objekte, Beziehungen oder Operationen stehen
-- **Strukturen**: Zusammensetzungen von Symbolen zu komplexen Ausdrücken
-- **Operationen**: Regel-gesteuerte Manipulation symbolischer Strukturen
-- **Suche**: Systematische Exploration des Raums möglicher Operationen
-
-## Empirical Inquiry
-
-Newell und Simon positionieren Informatik als **empirische Wissenschaft**:
-
-> *"Computer science is an empirical discipline. [...] Each new machine that is built is an experiment."*
-
-Die Behauptung: Computerprogramme sind nicht nur technische Artefakte, sondern Experimente über die Natur von Intelligenz.
-
-## Search as Universal Problem Solver
-
-### General Problem Solver (GPS)
-- Mittel-Ziele-Analyse (means-ends analysis)
-- Heuristische Suche statt brute force
-- Symbolische Repräsentation des Problems und des aktuellen Zustands
-
-### Problem Space Hypothesis
-- Jedes kognitive Problem kann als Suche in einem Zustandsraum modelliert werden
-- Intelligenz = effiziente Navigation in diesem Raum
-- Heuristiken als Wissen über Struktur des Raums
-
-## Grenzen und Kritik
-
-- **Frame Problem**: Wie bestimmt man relevante Operationen in komplexen Welten?
-- **Symbol Grounding Problem**: Wie erhalten Symbole Bedeutung?
-- **Brittleness**: Symbolische Systeme scheitern außerhalb ihres Design-Bereichs
-
-## Resonanz mit Modernem KI
-
-Transformer-Architekturen nutzen keine explizite symbolische Repräsentation – und dennoch zeigen Emergenz-Phänomene, die an symbolisches Reasoning erinnern. Die Frage bleibt offen:
-
-> *Sind neuronale Netze implizite Symbolsysteme, oder ist die PSS-Hypothese falsch?*
-
-## Verwandte Einträge
-
-- [[mind-design-iii-sammlung]]
-- [[mind-design-haugeland-1996]]
-- [[buckner-transformational-abstraction-2023]]
-
-## Wahrheitskern
-
-Newell & Simon haben die Sprache der KI für Jahrzehnte definiert. Ihre Suche-Paradigma überlebt in Monte-Carlo-Tree-Search, A* und AlphaGo – obwohl die Repräsentationen sich radikal geändert haben. (⌐■_■)
+---
+**Ursprung:** Allen Newell & Herbert A. Simon — "Computer Science as Empirical Inquiry: Symbols and Search" (Communications of the ACM, Vol. 19, No. 3, 1975)
