@@ -1,0 +1,139 @@
+/* ========================================
+   THEME A: WIKIPEDIA — Clean Academic
+   Blau/Weiß, seriös, encyclopedia-style
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+:root {
+  --wiki-blue: #0645ad;
+  --wiki-blue-dark: #0b0080;
+  --wiki-blue-light: #3366cc;
+  --wiki-bg: #ffffff;
+  --wiki-bg-alt: #f8f9fa;
+  --wiki-border: #a2a9b1;
+  --wiki-text: #202122;
+  --wiki-text-muted: #72777d;
+  --wiki-accent: #36c;
+  --wiki-warning: #ff9;
+  --wiki-header-bg: #fbfbfb;
+}
+
+body {
+  background: var(--wiki-bg);
+  color: var(--wiki-text);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.md-header {
+  background: var(--wiki-header-bg) !important;
+  border-bottom: 1px solid var(--wiki-border) !important;
+  box-shadow: none !important;
+}
+
+.md-header__title {
+  font-family: 'Libre Baskerville', serif;
+  color: var(--wiki-text) !important;
+  font-weight: 700;
+}
+
+.md-tabs {
+  background: var(--wiki-bg-alt) !important;
+  border-bottom: 1px solid var(--wiki-border) !important;
+}
+
+.md-tabs__link {
+  color: var(--wiki-blue) !important;
+  font-weight: 600;
+}
+
+.md-tabs__link--active {
+  color: var(--wiki-text) !important;
+  border-bottom: 2px solid var(--wiki-blue);
+}
+
+.md-sidebar {
+  background: var(--wiki-bg) !important;
+  border-right: 1px solid var(--wiki-border);
+}
+
+.md-nav__title {
+  color: var(--wiki-text) !important;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+
+.md-nav__link {
+  color: var(--wiki-blue) !important;
+}
+
+.md-nav__link--active {
+  color: var(--wiki-text) !important;
+  font-weight: 600;
+}
+
+.md-content h1 {
+  font-family: 'Libre Baskerville', serif;
+  color: var(--wiki-text);
+  border-bottom: 1px solid var(--wiki-border);
+  font-size: 1.8em;
+}
+
+.md-content h2 {
+  font-family: 'Libre Baskerville', serif;
+  color: var(--wiki-text);
+  border-bottom: 1px solid var(--wiki-border);
+  font-size: 1.5em;
+}
+
+.md-content h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--wiki-text);
+  font-weight: 700;
+}
+
+.md-content a {
+  color: var(--wiki-blue);
+  text-decoration: none;
+}
+
+.md-content a:hover {
+  text-decoration: underline;
+}
+
+.md-typeset code {
+  background: var(--wiki-bg-alt) !important;
+  color: var(--wiki-text) !important;
+  border: 1px solid var(--wiki-border) !important;
+}
+
+.md-typeset .admonition {
+  background: var(--wiki-bg-alt) !important;
+  border: 1px solid var(--wiki-border) !important;
+  border-left: 4px solid var(--wiki-blue) !important;
+}
+
+.image-grid img {
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+}
+
+.quote-block {
+  background: var(--wiki-bg-alt);
+  border-left: 4px solid var(--wiki-blue);
+  font-style: italic;
+}
+
+.constellation-grid h2 {
+  background: var(--wiki-bg-alt);
+  border: 1px solid var(--wiki-border);
+}
+
+.constellation-grid h2:hover {
+  border-color: var(--wiki-blue);
+}
+
+.md-footer {
+  background: var(--wiki-bg-alt) !important;
+  border-top: 1px solid var(--wiki-border);
+}
