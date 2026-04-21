@@ -1,29 +1,31 @@
-# 📹 NotebookLM Video Integration
-
-<div class="tech-header" markdown>
-
-Umfassende Guides zur Integration von Video-Inhalten mit Googles NotebookLM.
-
-</div>
-
 ---
-
-## 📄 Dokumente
-
-- **[AI Video Enterprise Blueprint (PDF)](../assets/pdfs/notebooklm-blueprint.pdf)**
-- **[Ultimate Guide (PDF)](../assets/pdfs/notebooklm-guide.pdf)**
-
+aliases: [NotebookLM Guides, Video Integration, KI Notizbuch]
+tags: [#Technologie_NotebookLM, #Guide, #Navigation, #Video]
+date_added: 2026-04-22
+type: navigation
 ---
+# NotebookLM Video Integration — Guides & Ressourcen
 
-## 🎯 Über NotebookLM
+## Übersicht
 
-NotebookLM ist Googles KI-gestütztes Notizbuch-Tool, das Dokumente versteht, zusammenfasst und neue Einsichten generiert. Mit der Video-Integration können auch Audiovisuelle Inhalte analysiert werden.
+NotebookLM ist Googles KI-gestütztes Notizbuch-Tool, das Dokumente versteht, zusammenfasst und neue Einsichten generiert. Mit der Video-Integration können auch audiovisuelle Inhalte analysiert werden.
 
-### Kernthemen der Guides:
-- Enterprise-Strategien für Video-Content
-- KI-gestützte Video-Analyse
-- Workflow-Integration
-- Best Practices
+## Kernthemen der Guides
+
+- **Enterprise-Strategien für Video-Content**
+- **KI-gestützte Video-Analyse**
+- **Workflow-Integration**
+- **Best Practices**
+
+## Dokumente
+
+- [AI Video Enterprise Blueprint (PDF)](../assets/pdfs/notebooklm-blueprint.pdf)
+- [Ultimate Guide (PDF)](../assets/pdfs/notebooklm-guide.pdf)
+
+## Zugehörige Zettel
+
+- [[notebooklm-ki-wissenssynthese]] — KI-gestützte Wissenssynthese als Research-Fundament
+- [[ai-video-content-pyramide]] — Die Content-Pyramide & automatisierte Produktions-Pipeline
 
 ---
 
