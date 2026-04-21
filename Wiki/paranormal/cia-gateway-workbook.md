@@ -10,7 +10,7 @@ Das **Gateway Experience** — ein technischer Bericht des US-Verteidigungsminis
 
 ## 📥 Download
 
-**[CIA Gateway Workbook (PDF)](../../assets/pdfs/cia-gateway-workbook.pdf)**
+**[CIA Gateway Workbook (PDF)](../assets/pdfs/cia-gateway-workbook.pdf)**
 
 ---
 

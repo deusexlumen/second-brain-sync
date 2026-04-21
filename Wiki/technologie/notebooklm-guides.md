@@ -10,8 +10,8 @@ Umfassende Guides zur Integration von Video-Inhalten mit Googles NotebookLM.
 
 ## 📄 Dokumente
 
-- **[AI Video Enterprise Blueprint (PDF)](../../assets/pdfs/notebooklm-blueprint.pdf)**
-- **[Ultimate Guide (PDF)](../../assets/pdfs/notebooklm-guide.pdf)**
+- **[AI Video Enterprise Blueprint (PDF)](../assets/pdfs/notebooklm-blueprint.pdf)**
+- **[Ultimate Guide (PDF)](../assets/pdfs/notebooklm-guide.pdf)**
 
 ---
 
