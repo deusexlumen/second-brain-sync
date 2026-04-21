@@ -20,14 +20,19 @@ Das **Arbatel de Magia Veterum** ist eines der einflussreichsten Grimoires der w
 
 <div class="image-grid" markdown>
 
-![Arbatel Bild 1](../assets/images/arbatel_bild_01.png)
-![Arbatel Bild 2](../assets/images/arbatel_bild_02.png)
-![Arbatel Bild 3](../assets/images/arbatel_bild_03.png)
-![Arbatel Bild 4](../assets/images/arbatel_bild_04.png)
-![Arbatel Bild 9](../assets/images/arbatel_bild_09.png)
-![Arbatel Bonus](../assets/images/arbatel_bild_bonus.png)
+![Arbatel Titelblatt](../assets/images/arbatel_bild_01.png)
+![Arbatel Innenseite 1](../assets/images/arbatel_bild_02.png)
+![Arbatel Innenseite 2](../assets/images/arbatel_bild_03.png)
+![Arbatel Siegel](../assets/images/arbatel_bild_04.png)
 
 </div>
+
+---
+
+## 📖 Weitere Bilder
+
+![Arbatel Detail](../assets/images/arbatel_bild_09.png)
+![Arbatel Kollage](../assets/images/arbatel_bild_bonus.png)
 
 ---
 

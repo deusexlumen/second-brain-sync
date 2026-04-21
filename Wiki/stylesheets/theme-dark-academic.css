@@ -1,0 +1,191 @@
+/* ========================================
+   THEME B: DARK ACADEMIC
+   Dunkle Bibliothek, warmes Licht, edel
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --acad-bg: #1a1814;
+  --acad-bg-alt: #252220;
+  --acad-bg-card: #2a2724;
+  --acad-text: #e8e2d9;
+  --acad-text-muted: #9a9186;
+  --acad-gold: #c9a959;
+  --acad-gold-light: #e8d5a3;
+  --acad-brown: #6b5344;
+  --acad-ink: #2c1810;
+  --acad-parchment: #f5f0e8;
+}
+
+body {
+  background: var(--acad-bg);
+  color: var(--acad-text);
+  font-family: 'Inter', sans-serif;
+}
+
+.md-header {
+  background: var(--acad-bg-alt) !important;
+  border-bottom: 2px solid var(--acad-brown) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+}
+
+.md-header__title {
+  font-family: 'Crimson Text', serif;
+  color: var(--acad-gold) !important;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.md-tabs {
+  background: var(--acad-bg) !important;
+  border-bottom: 1px solid var(--acad-brown) !important;
+}
+
+.md-tabs__link {
+  color: var(--acad-text-muted) !important;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.md-tabs__link:hover {
+  color: var(--acad-gold) !important;
+}
+
+.md-tabs__link--active {
+  color: var(--acad-gold) !important;
+  border-bottom: 2px solid var(--acad-gold);
+}
+
+.md-sidebar {
+  background: var(--acad-bg-alt) !important;
+}
+
+.md-nav__title {
+  color: var(--acad-gold) !important;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+}
+
+.md-nav__link {
+  color: var(--acad-text-muted) !important;
+}
+
+.md-nav__link:hover {
+  color: var(--acad-gold-light) !important;
+}
+
+.md-nav__link--active {
+  color: var(--acad-gold) !important;
+}
+
+.md-content {
+  background: var(--acad-bg) !important;
+}
+
+.md-content h1 {
+  font-family: 'Crimson Text', serif;
+  color: var(--acad-gold);
+  font-weight: 700;
+  border-bottom: 2px solid var(--acad-brown);
+  padding-bottom: 0.3em;
+  font-size: 2.2em;
+}
+
+.md-content h2 {
+  font-family: 'Crimson Text', serif;
+  color: var(--acad-gold-light);
+  font-weight: 600;
+  border-bottom: 1px solid var(--acad-brown);
+  font-size: 1.6em;
+}
+
+.md-content h3 {
+  font-family: 'Crimson Text', serif;
+  color: var(--acad-text);
+  font-weight: 600;
+}
+
+.md-content a {
+  color: var(--acad-gold);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--acad-gold);
+  transition: all 0.2s;
+}
+
+.md-content a:hover {
+  color: var(--acad-gold-light);
+  border-bottom: 1px solid var(--acad-gold-light);
+}
+
+.md-typeset code {
+  background: var(--acad-bg-card) !important;
+  color: var(--acad-gold-light) !important;
+  border: 1px solid var(--acad-brown) !important;
+}
+
+.md-typeset .admonition {
+  background: var(--acad-bg-card) !important;
+  border: 1px solid var(--acad-brown) !important;
+  border-left: 4px solid var(--acad-gold) !important;
+}
+
+.md-typeset .admonition-title {
+  background: var(--acad-bg-alt) !important;
+  color: var(--acad-gold) !important;
+}
+
+.image-grid img {
+  border: 2px solid var(--acad-brown);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.image-grid img:hover {
+  border-color: var(--acad-gold);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.quote-block {
+  background: var(--acad-bg-card);
+  border-left: 4px solid var(--acad-gold);
+  font-style: italic;
+  color: var(--acad-text-muted);
+}
+
+.constellation-grid h2 {
+  background: var(--acad-bg-card);
+  border: 1px solid var(--acad-brown);
+  transition: all 0.3s;
+}
+
+.constellation-grid h2:hover {
+  border-color: var(--acad-gold);
+  transform: translateY(-2px);
+}
+
+.constellation-grid h2 a {
+  color: var(--acad-gold) !important;
+}
+
+.md-footer {
+  background: var(--acad-bg-alt) !important;
+  border-top: 2px solid var(--acad-brown);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--acad-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--acad-brown);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--acad-gold);
+}
