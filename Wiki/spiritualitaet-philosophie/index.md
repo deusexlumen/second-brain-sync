@@ -3,6 +3,7 @@
 > *Weg vom Denken, hin zum Sein.*
 
 ---
+type: navigation
 
 ## Einträge
 

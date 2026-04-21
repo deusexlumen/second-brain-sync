@@ -3,6 +3,7 @@
 > *Medien, Wahrheit, Macht — und wer sie kontrolliert.*
 
 ---
+type: navigation
 
 ## Einträge
 

@@ -3,6 +3,7 @@
 > *Die Fragen, die sie nicht beantworten wollen.*
 
 ---
+type: navigation
 
 ## Einträge
 

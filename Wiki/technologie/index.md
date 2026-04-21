@@ -10,5 +10,6 @@ Umfassende Guides zur Integration von Video-Inhalten mit Googles NotebookLM — 
 </div>
 
 ---
+type: navigation
 
 *"Technologie ist Magie, die funktioniert."* — Arthur C. Clarke 🪄

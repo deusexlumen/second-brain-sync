@@ -1,31 +1,29 @@
+---
+aliases: [Psyche, Kognition, Mind, Thinking]
+tags: [#Navigation, #Psyche, #Kognition]
+date_added: 2026-04-22
+type: navigation
+---
 # Psyche & Kognition
 
 > *Wie wir denken. Warum wir handeln. Wer uns manipuliert.*
 
----
-
 ## Einträge
 
-- **Robert Greene — The Laws of Human Nature**  
-  Die 18 Gesetze der menschlichen Natur. Perikles, MLK, Napoleon, Gandhi.  
-  [→ Zum Eintrag](robert-greene-laws-of-human-nature.md)
+- **[[greene-gesetze-menschlicher-natur|Robert Greene — The Laws of Human Nature]]**
+  Die 18 Gesetze der menschlichen Natur. Perikles, MLK, Napoleon, Gandhi.
 
-- **Maria Konnikova — Mastermind**  
-  Sherlock Holmes' mentale Methoden: Beobachtung, Deduktion, systematisches Denken.  
-  [→ Zum Eintrag](maria-konnikova-mastermind.md)
+- **[[konnikova-mastermind|Maria Konnikova — Mastermind]]**
+  Sherlock Holmes' mentale Methoden: Beobachtung, Deduktion, systematisches Denken.
 
-- **Marilee Adams — Change Your Questions, Change Your Life**  
-  Lerner vs. Richter-Mindset. Fragetypen als Verhaltenshebel.  
-  [→ Zum Eintrag](marilee-adams-questions.md)
+- **[[adams-questions|Marilee Adams — Change Your Questions, Change Your Life]]**
+  Lerner vs. Richter-Mindset. Fragetypen als Verhaltenshebel.
 
-- **Susan Cain — Quiet**  
-  Die Macht der Introvertierten. High Reactivity, Deliberate Practice.  
-  [→ Zum Eintrag](susan-cain-quiet.md)
+- **[[cain-quiet|Susan Cain — Quiet]]**
+  Die Macht der Introvertierten. High Reactivity, Deliberate Practice.
 
-- **Jeffery Dawson — Mind Control**  
-  Gehirnwäsche, persuasive Techniken, Schutzstrategien.  
-  [→ Zum Eintrag](jeffery-dawson-mind-control.md)
+- **[[dawson-mind-control|Jeffery Dawson — Mind Control]]**
+  Gehirnwäsche, persuasive Techniken, Schutzstrategien.
 
-- **Steve Salerno — SHAM**  
-  Self-Help and Actualization Movement — die Industrie hinter dem Erfolgsmythos.  
-  [→ Zum Eintrag](steve-salerno-sham.md)
+- **[[salerno-sham-selbsthilfe-industrie|Steve Salerno — SHAM]]**
+  Self-Help and Actualization Movement — die Industrie hinter dem Erfolgsmythos.

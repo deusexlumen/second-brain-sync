@@ -3,6 +3,7 @@
 > *Was wir glauben, wer wir waren — und was wir feiern.*
 
 ---
+type: navigation
 
 ## Einträge
 

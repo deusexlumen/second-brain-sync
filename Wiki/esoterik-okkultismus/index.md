@@ -3,6 +3,7 @@
 > *Grimoires, Runen, Numerologie — und die Energie, die sie nicht sehen wollen.*
 
 ---
+type: navigation
 
 ## Einträge
 

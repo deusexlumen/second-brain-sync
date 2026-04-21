@@ -7,12 +7,14 @@ Eine tiefe Analyse der salomonischen Magietradition — mit Original-Dokumenten 
 </div>
 
 ---
+type: navigation
 
 ## 📄 Dokumente
 
 - **[Analyse-PDF herunterladen](../../assets/pdfs/salomonische-magie-analyse.pdf)**
 
 ---
+type: navigation
 
 ## 🖼️ Bildmaterial
 
@@ -24,5 +26,6 @@ Eine tiefe Analyse der salomonischen Magietradition — mit Original-Dokumenten 
 </div>
 
 ---
+type: navigation
 
 *"Salomons Schlüssel öffnet Türen, die besser verschlossen bleiben."* 🗝️

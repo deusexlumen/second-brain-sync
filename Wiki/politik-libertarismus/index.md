@@ -1,31 +1,29 @@
+---
+aliases: [Politik, Libertarismus, Anarchie, Eigentum]
+tags: [#Navigation, #Politik, #Libertarismus]
+date_added: 2026-04-22
+type: navigation
+---
 # Politik & Libertarismus
 
 > *Eigentum. Anarchie. Der Staat als Problem, nicht als Lösung.*
 
----
-
 ## Einträge
 
-- **Hans-Hermann Hoppe — A Theory of Socialism and Capitalism**  
-  Die ökonomische Analyse beider Systeme. Argumentationsethik im Keim.  
-  [→ Zum Eintrag](hans-hermann-hoppe-theory-socialism-capitalism.md)
+- **[[hoppe-theory-socialism-capitalism|Hans-Hermann Hoppe — A Theory of Socialism and Capitalism]]**
+  Die ökonomische Analyse beider Systeme. Argumentationsethik im Keim.
 
-- **Hans-Hermann Hoppe — Der Wettbewerb der Gauner**  
-  Eliten, Staat, Privatrechtsgesellschaft.  
-  [→ Zum Eintrag](hans-hermann-hoppe-der-wettbewerb-der-gauner.md)
+- **[[hoppe-wettbewerb-gauner|Hans-Hermann Hoppe — Der Wettbewerb der Gauner]]**
+  Eliten, Staat, Privatrechtsgesellschaft.
 
-- **Hans-Hermann Hoppe — Eigentum, Anarchie und Staat**  
-  Das zentrale Werk. Privatrechtsgesellschaft, Nichtaggressionsprinzip.  
-  [→ Zum Eintrag](hans-hermann-hoppe-eigentum-anarchie-staat.md)
+- **[[hoppe-eigentum-selbsteigentum|Hans-Hermann Hoppe — Eigentum, Anarchie und Staat]]**
+  Das zentrale Werk. Privatrechtsgesellschaft, Nichtaggressionsprinzip.
 
-- **Hans-Hermann Hoppe — Democracy: The God That Failed**  
-  Warum Demokratie scheitert. Zeithorizont-Problem.  
-  [→ Zum Eintrag](hans-hermann-hoppe-democracy-god-failed.md)
+- **[[hoppe-democracy-god-failed|Hans-Hermann Hoppe — Democracy: The God That Failed]]**
+  Warum Demokratie scheitert. Zeithorizont-Problem.
 
-- **Hans-Hermann Hoppe — Eine kurze Geschichte der Menschheit**  
-  2015, 132 Seiten. Vom Prästaat zur Privatrechtsgesellschaft.  
-  [→ Zum Eintrag](hans-hermann-hoppe-kurze-geschichte-der-menschheit.md)
+- **[[hoppe-kurze-geschichte-der-menschheit|Hans-Hermann Hoppe — Eine kurze Geschichte der Menschheit]]**
+  2015, 132 Seiten. Vom Prästaat zur Privatrechtsgesellschaft.
 
-- **Murray Rothbard — Krieg, Frieden und der Staat**  
-  1963. Nichtaggressionsprinzip. "Krieg ist die Gesundheit des Staates."  
-  [→ Zum Eintrag](murray-rothbard-krieg-frieden-staat.md)
+- **[[rothbard-krieg-frieden-staat|Murray Rothbard — Krieg, Frieden und der Staat]]**
+  1963. Nichtaggressionsprinzip. "Krieg ist die Gesundheit des Staates."

@@ -3,6 +3,7 @@
 > *Weniger Ego. Mehr Substanz. Die Kunst, zu tun.*
 
 ---
+type: navigation
 
 ## Einträge
 

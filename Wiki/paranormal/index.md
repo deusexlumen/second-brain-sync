@@ -8,6 +8,7 @@ Das berühmte CIA-Gateway-Dokument zur Bewusstseinsforschung. Ein technischer Be
 **[→ Zum CIA Gateway Workbook](cia-gateway-workbook.md)**
 
 ---
+type: navigation
 
 ## 🌌 1764 German Sky Phenomena
 Historische Dokumentation ungewöhnlicher Himmelserscheinungen aus dem Jahr 1764 in Deutschland.
@@ -17,5 +18,6 @@ Historische Dokumentation ungewöhnlicher Himmelserscheinungen aus dem Jahr 1764
 </div>
 
 ---
+type: navigation
 
 *"Die Wahrheit ist oft seltsamer als Fiktion."* 🌠

@@ -8,6 +8,7 @@ Das *Arbatel de Magia Veterum* ist ein klassisches Grimoire der Renaissance-Magi
 **[→ Zum Arbatel Magie System](arbatel-magie-system.md)**
 
 ---
+type: navigation
 
 ## 🔮 Salomonische Magie
 Eine tiefe Analyse der salomonischen Magietraditionen — mit Original-Dokumenten und Bildmaterial aus historischen Quellen.
@@ -17,5 +18,6 @@ Eine tiefe Analyse der salomonischen Magietraditionen — mit Original-Dokumente
 </div>
 
 ---
+type: navigation
 
 *"Das Wissen der Alten ist kein Mythos — es ist ein Schlüssel."* 🔑

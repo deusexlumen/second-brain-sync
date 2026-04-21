@@ -10,5 +10,6 @@ Ein literarisches Projekt — das erste Kapitel eines epischen Werks.
 </div>
 
 ---
+type: navigation
 
 *"Geschichten sind die Sternenkarten der Seele."* ✨

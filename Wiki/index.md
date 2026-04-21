@@ -1,47 +1,35 @@
+---
+aliases: [Second Brain, Wissenskompendium, Bibliothek]
+tags: [#Navigation, #Index, #Wiki]
+date_added: 2026-04-22
+type: navigation
+---
 # 🌌 Second Brain — Wissenskompendium
-
-<div class="star-map-hero" markdown>
 
 **Willkommen in der Bibliothek des Universums.**
 
 Dies ist ein lebendiges Archiv von Wissen — gesammelt, kuratiert und für die Ewigkeit strukturiert. Jedes Thema ist ein Stern in unserer Konstellation.
 
-</div>
+## Konstellationen
 
----
-
-<div class="constellation-grid" markdown>
-
-## 🔮 [Magie & Okkultismus](magie/index.md)
-Arbatel Magie System, Salomonische Magie, historische Grimoires
-
-## 👁️ [Paranormal & Geheimdienste](paranormal/index.md)
-CIA Gateway Workbook, historische Himmelsphänomene
-
-## ⚙️ [Technologie & KI](technologie/index.md)
-NotebookLM Integration, KI-Guides, Enterprise Blueprints
-
-## 📚 [Literatur & Kunst](literatur/index.md)
-RagnaMaria, literarische Projekte
-
-## 🎵 [Inbox](inbox/song-idee.md)
-Rohe Ideen, Songkonzepte, kreative Seeds
-
-## 🏛️ [Politik](politik/losdemokratie.md)
-Losdemokratie, deliberative Demokratie, Systemtheorie
-
-</div>
-
----
-
-<div class="quote-block" markdown>
+- **[[magie/index|Magie & Okkultismus]]** — Arbatel, Salomonische Magie, Grimoires
+- **[[paranormal/index|Paranormal & Geheimdienste]]** — CIA Gateway, Himmelsphänomene
+- **[[technologie/index|Technologie & KI]]** — NotebookLM, Mind Design, Turing, KI-Fundamente
+- **[[literatur/index|Literatur & Kunst]]** — RagnaMaria, literarische Projekte
+- **[[politik/index|Politik]]** — Losdemokratie, Geopolitik, Systemtheorie
+- **[[politik-libertarismus/index|Politik & Libertarismus]]** — Hoppe, Eigentum, Anarchie
+- **[[psyche-kognition/index|Psyche & Kognition]]** — Greene, Konnikova, Salerno, SHAM
+- **[[selbstentwicklung/index|Selbstentwicklung]]** — Tracy, Newport, Holiday, Gilbert
+- **[[esoterik-okkultismus/index|Esoterik & Okkultismus]]** — Millman, Reich, Grimoires
+- **[[geschichte-mythologie/index|Geschichte & Mythologie]]** — Julfest, Rauhnächte
+- **[[gesundheit-medizin/index|Gesundheit & Medizin]]** — Anatomie, Impfkritik
+- **[[spiritualitaet-philosophie/index|Spiritualität & Philosophie]]** — Kontemplation, Ethik
+- **[[verschwoerungen-alternatives/index|Verschwörungen & Alternatives]]** — IluminatiNewsPlus, DEW
+- **[[inbox/song-idee|Inbox]]** — Rohe Ideen, kreative Seeds
 
 > *"Das Wissen ist ein Labyrinth. Aber jedes Labyrinth hat einen Ariadne-Faden."*
->
 > — Deus Ex Lumen
 
-</div>
-
 ---
+*System: Ariadne-Nexus | Letzte Aktualisierung: 2026-04-22*
 
-*Letzte Aktualisierung: 2026-04-21 | System: MkDocs Material | Theme: Star Map* ✨

@@ -1,14 +1,21 @@
 ---
-title: Song-Idee
-date: 2026-04-14
-tags: [needs-review, musik, song-idee]
+aliases: [Song-Idee, Synthesizer, Regen]
+tags: [#Musik_Idee, #Synthesizer, #Regen, #Fragment]
+date_added: 2026-04-22
+type: rohdaten
+---
+# Song-Idee — Synthesizer & Regen
+
+## Rohdaten
+
+Unvollständige Notiz zu einer Song-Idee.
+
+**Elemente:**
+- [[synthesizer]] — Elektronische Klangerzeugung
+- [[regen]] — Atmosphärisches Element
+
+**Status:** Fragment, benötigt menschlichen Review
+
 ---
 
-!!! danger "Unvollständiges Fragment"
-    Dieser Text ist zu kurz oder aus dem Kontext gerissen. Ein menschlicher Review ist erforderlich, bevor daraus ein vollwertiger Artikel wird.
-
-## Zusammenfassung
-Unvollständige Notiz zu einer Song-Idee mit [[synthesizer]] und [[regen]].
-
-## Hauptinhalt
-Idee für Song: Irgendwas mit [[synthesizer]] und [[regen]].
+*Rohdaten-Archiv: Unverarbeitetes kreatives Seed.*

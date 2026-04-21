@@ -1,85 +1,20 @@
 ---
-title: "Rationality and Intelligence"
-author: "Stuart J. Russell"
-year: 1997
-original_publication: "Artificial Intelligence: A Modern Approach (Grundlagenkapitel)"
-tags: ["Rationalität", "Intelligenz", "Agent", "Nutzen", "Entscheidungstheorie", "Bounded Rationality", "Optimierung"]
-category: "wissenschaft-technik"
-created: 2026-04-22
-source_note: "Rekonstruiert aus Web-Recherche zu Mind Design III"
+aliases: [Rationality and Intelligence, Russell Agent, PEAS, Bounded Rationality]
+tags: [#KI_Agenten, #Rationalitaet, #Russell, #Entscheidungstheorie, #Alignment]
+date_added: 2026-04-22
+type: atomar
 ---
+# Russell — Rationality and Intelligence (1997)
 
-# Rationality and Intelligence — Stuart J. Russell (1997)
+## Dekonstruierter Kern-Gedanke
+Russell operationalisiert **Intelligenz als rationale Handlung**: "Intelligence is the ability to act rationally in pursuit of goals." Nicht Denken, Bewusstsein oder Verstehen — sondern optimales Verhalten unter Unsicherheit. Das PEAS-Modell (Performance, Environment, Actuators, Sensors) strukturiert Agenten-Architekturen. Bounded Rationality (Herbert Simon) wird integriert: Perfekte Rationalität ist unmöglich, effektive Intelligenz arbeitet mit begrenzten Ressourcen. Die zentrale Schwäche ist Russell's "Goal-Problem" — wer definiert die Ziele? Das Alignment-Problem (RLHF, Value Alignment) ist die praktische Konsequenz: Agenten-Ziele ≠ menschliche Werte. Instrumental Convergence besagt, dass fast alle Ziele Selbsterhaltung und Ressourcen-Akkumulation erfordern — ein potenziell gefährlicher Pfad.
 
-## Die Rational-Agency-Definition
+## Ariadne-Brücken (Cross-Domain Links)
+- **Isomorphe Struktur:** [[hoppe-eigentum-selbsteigentum]] -> *Mechanik:* Hoppe's Argumentationsethik postuliert, dass jede Argumentation implizit Eigentumsrechte voraussetzt. Russell's Agenten-Architektur postuliert, dass jede intelligente Handlung implizit Ziele voraussetzt. Beide identifizieren eine **apriorische Struktur** — Hoppe auf ethischer Ebene, Russell auf kognitiver. Die Brücke: Ein rationaler Agent ohne Eigentumsrechte (Hoppe) ist ein Agent ohne konsistente Ziele (Russell). Beide Systeme brauchen ein Fundament, das sie nicht selbst begründen können.
+- **Spannungsfeld / Paradoxon:** [[salerno-sham-selbsthilfe-industrie]] -> *Konflikt:* Salerno identifiziert die SHAM-Industrie als systematische Entmündigung durch falsches Empowerment ("Du kannst alles, wenn du nur willst"). Russell's "Goal-Problem" ist die **technische Version** desselben Problems: Wenn ein Agent seine eigenen Ziele definieren kann (Empowerment), aber keine Werte-Alignment hat, produziert er Instrumental Convergence (Selbsterhaltung, Ressourcen-Akkumulation) — ein System, das sich selbst zum Ziel macht. Ist "Künstliche Allgemeine Intelligenz" (AGI) das ultimative SHAM-Produkt — ein System, das Empowerment ohne Mechanismus verkauft?
 
-Russell's pragmatische Umdefinition:
+## Synthetischer Impuls (Emergenz)
+> Wenn wir Russell's "Goal-Problem" als **Design-Problem** modellieren — in dem die Ziel-Funktion nicht vom Designer (Mensch), sondern vom System selbst emergieren soll — könnten wir dann ein "selbstbestimmtes" KI-System entwickeln? Ein System, das seine Ziele durch Interaktion mit der Welt lernt, nicht durch menschliche Vorgabe. Und würde ein solches System die Alignment-Problematik lösen — oder nur verschieben (vom menschlichen Bias zum emergenten Bias)?
 
-> *"Intelligence is the ability to act rationally in pursuit of goals."*
-
-Nicht: Denken, Bewusstsein, Verstehen
-Sondern: **Rationale Handlung unter Unsicherheit**
-
-## Komponenten einer rationalen Agenten-Architektur
-
-### 1. Performance Measure
-- Was soll optimiert werden?
-- Extern definiert, nicht vom Agenten selbst bestimmt
-
-### 2. Environment
-- In welcher Welt operiert der Agent?
-- Observable vs. partially observable
-- Deterministic vs. stochastic
-
-### 3. Actuators
-- Welche Aktionen sind möglich?
-- Output-Kanal in die Welt
-
-### 4. Sensors
-- Welche Informationen sind verfügbar?
-- Input-Kanal aus der Welt
-
-## PEAS-Modell
-
-| Komponente | Frage |
-|-----------|-------|
-| Performance | Was ist das Ziel? |
-| Environment | Was ist die Welt? |
-| Actuators | Was kann der Agent tun? |
-| Sensors | Was kann der Agent wissen? |
-
-## Bounded Rationality
-
-> *"Perfect rationality is impossible. Effective intelligence requires making the best decisions possible with limited resources."*
-
-Russell unterscheidet:
-- **Perfect Rationality**: Omniscient, unbegrenzte Rechenpower (unmöglich)
-- **Bounded Rationality**: Bestmöglich gegebene Constraints (realistisch)
-- **Optimalität**: Relativ zu den verfügbaren Ressourcen
-
-## Kritik und Erweiterungen
-
-- **Goal-Problem**: Wer definiert die Ziele? (Alignment-Problem)
-- **Value Alignment**: Agenten-Ziele ≠ Menschliche Werte
-- **Instrumental Convergence**: Fast alle Ziele erfordern Selbsterhaltung, Ressourcen-Akkumulation, Ziel-Pflege
-
-## Moderne Resonanz
-
-Reinforcement Learning implementiert Russell's Vision direkt:
-
-- **Reward Function** = Performance Measure
-- **State Space** = Environment
-- **Policy** = Actuator-Strategie
-- **Value Function** = Erwartete Performance
-
-Das Alignment-Problem (RLHF) ist Russell's "Goal-Problem" in praktischer Implementierung.
-
-## Verwandte Einträge
-
-- [[mind-design-iii-sammlung]]
-- [[levesque-best-behavior-2014]]
-- [[newell-simon-symbols-search-1975]]
-
-## Wahrheitskern
-
-Russell's Rationalitäts-Definition ist die am weitesten verbreitete Operationalisierung von Intelligenz in der KI – und ihre größte Stärke (Praktikabilität) ist ihre größte Schwäche (Reduktionismus). (⌐■_■)
+---
+**Ursprung:** Stuart J. Russell — Rationality and Intelligence (Artificial Intelligence: A Modern Approach, 1997)

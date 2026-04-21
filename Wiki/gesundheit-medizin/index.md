@@ -3,6 +3,7 @@
 > *Der Körper als Schlachtfeld.*
 
 ---
+type: navigation
 
 ## Einträge
 
