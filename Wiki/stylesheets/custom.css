@@ -1,521 +1,191 @@
 /* ========================================
-   STAR MAP THEME — Second Brain Wiki
-   Futuristic-Mystical Dark Theme
-   Gold / Indigo / Deep Space
+   THEME B: DARK ACADEMIC
+   Dunkle Bibliothek, warmes Licht, edel
    ======================================== */
 
-/* Import Inter for body, Space Grotesk for headings */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
-/* ========================================
-   CSS VARIABLES — Root Overrides
-   ======================================== */
 :root {
-  /* Color Palette */
-  --star-gold: #d4af37;
-  --star-gold-light: #f0d878;
-  --star-gold-dark: #8b6914;
-  --star-indigo: #4b0082;
-  --star-indigo-light: #6a0dad;
-  --star-indigo-dark: #2e003e;
-  --star-midnight: #0a0a1a;
-  --star-deep: #050510;
-  --star-nebula: #1a0a2e;
-  --star-text: #e8e0d0;
-  --star-text-muted: #a09080;
-  --star-accent: #ffd700;
-  
-  /* Override Material defaults */
-  --md-primary-fg-color: var(--star-indigo);
-  --md-primary-fg-color--light: var(--star-indigo-light);
-  --md-primary-fg-color--dark: var(--star-indigo-dark);
-  --md-accent-fg-color: var(--star-gold);
-  --md-accent-fg-color--transparent: rgba(212, 175, 55, 0.1);
-  --md-default-fg-color: var(--star-text);
-  --md-default-fg-color--light: var(--star-text-muted);
-  --md-default-bg-color: var(--star-midnight);
-  --md-code-bg-color: var(--star-deep);
-  --md-code-fg-color: var(--star-gold-light);
-  
-  /* Typography */
-  --md-text-font: 'Inter', sans-serif;
-  --md-heading-font: 'Space Grotesk', sans-serif;
+  --acad-bg: #1a1814;
+  --acad-bg-alt: #252220;
+  --acad-bg-card: #2a2724;
+  --acad-text: #e8e2d9;
+  --acad-text-muted: #9a9186;
+  --acad-gold: #c9a959;
+  --acad-gold-light: #e8d5a3;
+  --acad-brown: #6b5344;
+  --acad-ink: #2c1810;
+  --acad-parchment: #f5f0e8;
 }
 
-/* ========================================
-   BODY & BACKGROUND
-   ======================================== */
 body {
-  background: linear-gradient(135deg, var(--star-deep) 0%, var(--star-midnight) 50%, var(--star-nebula) 100%);
-  background-attachment: fixed;
-  color: var(--star-text);
+  background: var(--acad-bg);
+  color: var(--acad-text);
+  font-family: 'Inter', sans-serif;
 }
 
-/* Subtle star field overlay */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(1px 1px at 20px 30px, rgba(255,255,255,0.15), transparent),
-    radial-gradient(1px 1px at 40px 70px, rgba(255,255,255,0.1), transparent),
-    radial-gradient(1px 1px at 50px 160px, rgba(255,255,255,0.2), transparent),
-    radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.15), transparent),
-    radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.1), transparent),
-    radial-gradient(1px 1px at 160px 120px, rgba(255,255,255,0.2), transparent);
-  background-repeat: repeat;
-  background-size: 200px 200px;
-  pointer-events: none;
-  z-index: -1;
-  opacity: 0.5;
-}
-
-/* ========================================
-   HEADER & NAVIGATION
-   ======================================== */
 .md-header {
-  background: linear-gradient(90deg, var(--star-indigo-dark), var(--star-indigo)) !important;
-  box-shadow: 0 2px 20px rgba(75, 0, 130, 0.4);
+  background: var(--acad-bg-alt) !important;
+  border-bottom: 2px solid var(--acad-brown) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
 }
 
 .md-header__title {
-  font-family: var(--md-heading-font);
+  font-family: 'Crimson Text', serif;
+  color: var(--acad-gold) !important;
   font-weight: 600;
-  letter-spacing: 0.05em;
-  color: var(--star-gold) !important;
+  letter-spacing: 0.03em;
 }
 
 .md-tabs {
-  background: linear-gradient(90deg, var(--star-indigo), var(--star-indigo-light)) !important;
+  background: var(--acad-bg) !important;
+  border-bottom: 1px solid var(--acad-brown) !important;
 }
 
 .md-tabs__link {
-  color: var(--star-text) !important;
-  font-family: var(--md-heading-font);
+  color: var(--acad-text-muted) !important;
   font-weight: 500;
   letter-spacing: 0.02em;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .md-tabs__link:hover {
-  color: var(--star-gold) !important;
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  color: var(--acad-gold) !important;
 }
 
 .md-tabs__link--active {
-  color: var(--star-gold) !important;
-  text-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+  color: var(--acad-gold) !important;
+  border-bottom: 2px solid var(--acad-gold);
 }
 
-/* ========================================
-   SIDEBAR
-   ======================================== */
 .md-sidebar {
-  background: rgba(10, 10, 26, 0.8) !important;
-  backdrop-filter: blur(10px);
+  background: var(--acad-bg-alt) !important;
 }
 
 .md-nav__title {
-  color: var(--star-gold) !important;
-  font-family: var(--md-heading-font);
+  color: var(--acad-gold) !important;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
 }
 
 .md-nav__link {
-  color: var(--star-text-muted) !important;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  color: var(--acad-text-muted) !important;
 }
 
 .md-nav__link:hover {
-  color: var(--star-gold-light) !important;
-  text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+  color: var(--acad-gold-light) !important;
 }
 
 .md-nav__link--active {
-  color: var(--star-gold) !important;
-  text-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+  color: var(--acad-gold) !important;
 }
 
-/* ========================================
-   MAIN CONTENT
-   ======================================== */
 .md-content {
-  background: rgba(10, 10, 26, 0.6) !important;
-  backdrop-filter: blur(5px);
+  background: var(--acad-bg) !important;
 }
 
-.md-content__inner {
-  color: var(--star-text);
-}
-
-/* Headings */
 .md-content h1 {
-  font-family: var(--md-heading-font);
-  color: var(--star-gold);
+  font-family: 'Crimson Text', serif;
+  color: var(--acad-gold);
   font-weight: 700;
-  letter-spacing: 0.03em;
-  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-  border-bottom: 2px solid var(--star-indigo);
-  padding-bottom: 0.5em;
-  margin-bottom: 1em;
+  border-bottom: 2px solid var(--acad-brown);
+  padding-bottom: 0.3em;
+  font-size: 2.2em;
 }
 
 .md-content h2 {
-  font-family: var(--md-heading-font);
-  color: var(--star-gold-light);
+  font-family: 'Crimson Text', serif;
+  color: var(--acad-gold-light);
   font-weight: 600;
-  letter-spacing: 0.02em;
-  text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid var(--acad-brown);
+  font-size: 1.6em;
 }
 
 .md-content h3 {
-  font-family: var(--md-heading-font);
-  color: var(--star-accent);
-  font-weight: 500;
+  font-family: 'Crimson Text', serif;
+  color: var(--acad-text);
+  font-weight: 600;
 }
 
-/* Links */
 .md-content a {
-  color: var(--star-gold-light);
+  color: var(--acad-gold);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
+  border-bottom: 1px dotted var(--acad-gold);
+  transition: all 0.2s;
 }
 
 .md-content a:hover {
-  color: var(--star-gold);
-  border-bottom: 1px solid var(--star-gold);
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  color: var(--acad-gold-light);
+  border-bottom: 1px solid var(--acad-gold-light);
 }
 
-/* ========================================
-   STAR MAP HERO SECTION
-   ======================================== */
-.star-map-hero {
-  text-align: center;
-  padding: 2em 1em;
-  background: linear-gradient(135deg, rgba(75, 0, 130, 0.2), rgba(212, 175, 55, 0.1), rgba(75, 0, 130, 0.2));
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  border-radius: 12px;
-  margin-bottom: 2em;
-  position: relative;
-  overflow: hidden;
+.md-typeset code {
+  background: var(--acad-bg-card) !important;
+  color: var(--acad-gold-light) !important;
+  border: 1px solid var(--acad-brown) !important;
 }
 
-.star-map-hero::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
-  animation: rotate 30s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.star-map-hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-  position: relative;
-  z-index: 1;
-}
-
-.star-map-hero p {
-  font-size: 1.2em;
-  color: var(--star-text-muted);
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-
-/* ========================================
-   CONSTELLATION GRID
-   ======================================== */
-.constellation-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5em;
-  margin: 2em 0;
-}
-
-.constellation-grid h2 {
-  background: linear-gradient(135deg, rgba(75, 0, 130, 0.4), rgba(212, 175, 55, 0.1));
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  border-radius: 10px;
-  padding: 1.5em;
-  margin: 0;
-  transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.constellation-grid h2::before {
-  content: '✦';
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.5em;
-  color: var(--star-gold);
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
-.constellation-grid h2:hover {
-  background: linear-gradient(135deg, rgba(75, 0, 130, 0.6), rgba(212, 175, 55, 0.2));
-  border-color: rgba(212, 175, 55, 0.5);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
-}
-
-.constellation-grid h2:hover::before {
-  opacity: 1;
-  text-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
-}
-
-.constellation-grid h2 a {
-  color: var(--star-gold) !important;
-  font-size: 1.3em;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.5em;
-}
-
-.constellation-grid p {
-  color: var(--star-text-muted);
-  font-size: 0.95em;
-  margin: 0;
-}
-
-/* ========================================
-   CONSTELLATION NAV (Section pages)
-   ======================================== */
-.constellation-nav {
-  background: rgba(10, 10, 26, 0.5);
-  border: 1px solid rgba(212, 175, 55, 0.15);
-  border-radius: 12px;
-  padding: 2em;
-  margin: 2em 0;
-}
-
-.constellation-nav h2 {
-  color: var(--star-gold);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-  padding-bottom: 0.5em;
-  margin-top: 1.5em;
-}
-
-.constellation-nav h2:first-child {
-  margin-top: 0;
-}
-
-.constellation-nav a {
-  color: var(--star-gold-light) !important;
-  font-weight: 500;
-  font-size: 1.1em;
-}
-
-/* ========================================
-   QUOTE BLOCK
-   ======================================== */
-.quote-block {
-  background: linear-gradient(135deg, rgba(75, 0, 130, 0.3), rgba(212, 175, 55, 0.1));
-  border-left: 3px solid var(--star-gold);
-  border-radius: 0 10px 10px 0;
-  padding: 1.5em 2em;
-  margin: 2em 0;
-  font-style: italic;
-}
-
-.quote-block p {
-  color: var(--star-text);
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.quote-block em {
-  color: var(--star-gold-light);
-}
-
-/* ========================================
-   IMAGE GRID
-   ======================================== */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1em;
-  margin: 1.5em 0;
-}
-
-.image-grid img {
-  border-radius: 8px;
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  transition: all 0.4s ease;
-  max-width: 100%;
-  height: auto;
-}
-
-.image-grid img:hover {
-  border-color: rgba(212, 175, 55, 0.6);
-  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
-  transform: scale(1.02);
-}
-
-/* ========================================
-   SECTION HEADERS
-   ======================================== */
-.arbatel-header,
-.salomon-header,
-.cia-header,
-.tech-header {
-  background: linear-gradient(135deg, rgba(75, 0, 130, 0.3), rgba(212, 175, 55, 0.1));
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  border-radius: 10px;
-  padding: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-/* ========================================
-   CARDS (Material override)
-   ======================================== */
-.md-typeset .grid.cards > ul > li {
-  background: linear-gradient(135deg, rgba(75, 0, 130, 0.3), rgba(212, 175, 55, 0.05)) !important;
-  border: 1px solid rgba(212, 175, 55, 0.2) !important;
-  border-radius: 10px !important;
-  transition: all 0.4s ease !important;
-}
-
-.md-typeset .grid.cards > ul > li:hover {
-  border-color: rgba(212, 175, 55, 0.5) !important;
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15) !important;
-  transform: translateY(-3px) !important;
-}
-
-.md-typeset .grid.cards > ul > li > p:first-child {
-  color: var(--star-gold) !important;
-  font-family: var(--md-heading-font);
-  font-weight: 600;
-}
-
-/* ========================================
-   ADMONITIONS
-   ======================================== */
 .md-typeset .admonition {
-  background: rgba(75, 0, 130, 0.2) !important;
-  border: 1px solid rgba(212, 175, 55, 0.2) !important;
-  border-radius: 8px !important;
+  background: var(--acad-bg-card) !important;
+  border: 1px solid var(--acad-brown) !important;
+  border-left: 4px solid var(--acad-gold) !important;
 }
 
 .md-typeset .admonition-title {
-  background: rgba(75, 0, 130, 0.4) !important;
-  color: var(--star-gold) !important;
-  font-family: var(--md-heading-font);
+  background: var(--acad-bg-alt) !important;
+  color: var(--acad-gold) !important;
 }
 
-/* ========================================
-   CODE BLOCKS
-   ======================================== */
-.md-typeset code {
-  background: var(--star-deep) !important;
-  color: var(--star-gold-light) !important;
-  border: 1px solid rgba(212, 175, 55, 0.2) !important;
-  border-radius: 4px !important;
+.image-grid img {
+  border: 2px solid var(--acad-brown);
+  border-radius: 4px;
+  transition: all 0.3s;
 }
 
-.md-typeset pre {
-  background: var(--star-deep) !important;
-  border: 1px solid rgba(212, 175, 55, 0.2) !important;
-  border-radius: 8px !important;
+.image-grid img:hover {
+  border-color: var(--acad-gold);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
+.quote-block {
+  background: var(--acad-bg-card);
+  border-left: 4px solid var(--acad-gold);
+  font-style: italic;
+  color: var(--acad-text-muted);
+}
+
+.constellation-grid h2 {
+  background: var(--acad-bg-card);
+  border: 1px solid var(--acad-brown);
+  transition: all 0.3s;
+}
+
+.constellation-grid h2:hover {
+  border-color: var(--acad-gold);
+  transform: translateY(-2px);
+}
+
+.constellation-grid h2 a {
+  color: var(--acad-gold) !important;
+}
+
 .md-footer {
-  background: linear-gradient(90deg, var(--star-indigo-dark), var(--star-indigo)) !important;
+  background: var(--acad-bg-alt) !important;
+  border-top: 2px solid var(--acad-brown);
 }
 
-.md-footer-meta {
-  background: var(--star-deep) !important;
-}
-
-/* ========================================
-   SEARCH
-   ======================================== */
-.md-search__input {
-  background: rgba(10, 10, 26, 0.8) !important;
-  border: 1px solid rgba(212, 175, 55, 0.3) !important;
-  color: var(--star-text) !important;
-}
-
-.md-search__input::placeholder {
-  color: var(--star-text-muted) !important;
-}
-
-.md-search__output {
-  background: var(--star-midnight) !important;
-  border: 1px solid rgba(212, 175, 55, 0.2) !important;
-}
-
-/* ========================================
-   TABLES
-   ======================================== */
-.md-typeset table {
-  background: rgba(10, 10, 26, 0.5) !important;
-  border: 1px solid rgba(212, 175, 55, 0.2) !important;
-}
-
-.md-typeset th {
-  background: rgba(75, 0, 130, 0.4) !important;
-  color: var(--star-gold) !important;
-  font-family: var(--md-heading-font);
-}
-
-.md-typeset td {
-  border-top: 1px solid rgba(212, 175, 55, 0.1) !important;
-}
-
-/* ========================================
-   SCROLLBAR
-   ======================================== */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--star-deep);
+  background: var(--acad-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--star-indigo);
-  border-radius: 4px;
+  background: var(--acad-brown);
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--star-indigo-light);
-}
-
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-@media (max-width: 768px) {
-  .star-map-hero h1 {
-    font-size: 1.8em;
-  }
-  
-  .constellation-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .image-grid {
-    grid-template-columns: 1fr;
-  }
+  background: var(--acad-gold);
 }
