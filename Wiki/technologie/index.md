@@ -1,23 +1,14 @@
-# ⚙️ Technologie
+# ⚙️ Technologie & KI
 
-> *"Jede hinreichend fortschrittliche Technologie ist von Magie nicht zu unterscheiden."* — Arthur C. Clarke
+<div class="constellation-nav" markdown>
 
----
+## 📹 NotebookLM Video Integration
+Umfassende Guides zur Integration von Video-Inhalten mit Googles NotebookLM — Enterprise-Strategien und praktische Blueprints.
 
-## Konstellationen
-
-<div class="grid cards" markdown>
-
--   :material-video: **NotebookLM Video Guides**
-    KI-generierte Video-Overviews — Classic vs. Cinematic, Preise, Limits und Use Cases.
-    [Zu den Guides](notebooklm-guides.md)
+**[→ Zu den NotebookLM Guides](notebooklm-guides.md)**
 
 </div>
 
 ---
 
-## Themenfelder
-
-- **KI-Content-Erstellung** — Automatisierte Video- und Textproduktion
-- **Business Tools** — Preis-Leistungs-Analysen
-- **Workflow-Optimierung** — Integration von KI in bestehende Prozesse
+*"Technologie ist Magie, die funktioniert."* — Arthur C. Clarke 🪄

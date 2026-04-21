@@ -1,33 +1,29 @@
-# CIA Gateway Workbook (Deutsch)
+# 🛸 CIA Gateway Workbook
 
-**Status:** Archiviert  
-**Format:** PDF  
-**Sprache:** Deutsch
+<div class="cia-header" markdown>
 
----
+Das **Gateway Experience** — ein technischer Bericht des US-Verteidigungsministeriums über Bewusstseinsforschung und außersinnliche Wahrnehmung.
 
-## Über das Dokument
-
-Das **CIA Gateway Workbook** ist ein Trainingshandbuch für Bewusstseinsforschung und transzendentale Erfahrungen, das ursprünglich im Kontext des US-Geheimdienst-Programms "Gateway" entwickelt wurde.
-
-Es behandelt:
-- Bewusstseinszustände und ihre kartographische Erfassung
-- Hemi-Sync Technologie (binaurale Beats)
-- Out-of-Body Erfahrungen (OBE)
-- Remote Viewing Grundlagen
-- Energetische Körper und deren Struktur
+</div>
 
 ---
 
-## 📎 Download
+## 📥 Download
 
-- **PDF:** [CIA Gateway Workbook (Deutsch)](../assets/pdfs/cia-gateway-workbook.pdf)
+**[CIA Gateway Workbook (PDF)](../assets/pdfs/cia-gateway-workbook.pdf)**
 
 ---
 
-## Weiterführende Themen
+## 📝 Über das Dokument
 
-- Paranormale Phänomene
-- Bewusstseinsforschung
-- Binaurale Technologien
-- Meditation & Trance-Zustände
+Das Gateway-Workbook beschreibt Methoden zur Induktion veränderter Bewusstseinszustände durch Hemisphärensynchronisation. Es wurde ursprünglich für militärische Remote-Viewing-Trainings entwickelt.
+
+### Kernthemen:
+- Hemisphären-Synchronisation
+- Fokussiertes Bewusstsein
+- Energie-Barriere-Modell
+- Zeit-Raum-Kontinuum
+
+---
+
+*"Die Grenzen der Realität sind flexibler als wir glauben."* 🌌

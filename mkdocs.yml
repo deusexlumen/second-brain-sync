@@ -1,6 +1,34 @@
-site_name: 'Kimi Brain'
+site_name: 'Second Brain — Star Map'
 docs_dir: 'Wiki'
 strict: false
+
+nav:
+  - 🌌 Startseite: index.md
+  - 🔮 Magie & Okkultismus:
+    - magie/index.md
+    - Arbatel Magie System: magie/arbatel-magie-system.md
+    - Arbatel Artikel: magie/arbatel-magie-system-text.md
+    - Arbatel Doku: magie/arbatel-doku.md
+    - Salomonische Magie: magie/salomonische-magie/index.md
+    - Salomonische Magie Artikel: magie/salomonische-magie/salomonische-magie-text.md
+  - 👁️ Paranormal & Geheimdienste:
+    - paranormal/index.md
+    - CIA Gateway Workbook: paranormal/cia-gateway-workbook.md
+    - CIA Gateway Artikel: paranormal/cia-gateway-workbook-text.md
+    - 1764 Sky Phenomena: paranormal/1764-german-sky-phenomena.md
+  - ⚙️ Technologie & KI:
+    - technologie/index.md
+    - NotebookLM Guides: technologie/notebooklm-guides.md
+    - NotebookLM Artikel: technologie/notebooklm-guides-text.md
+    - NotebookLM Blueprint: technologie/notebooklm-blueprint-text.md
+    - NotebookLM Guide: technologie/notebooklm-guide-text.md
+  - 📚 Literatur & Kunst:
+    - literatur/index.md
+    - RagnaMaria Kapitel 1: literatur/ragnamaria/kapitel-01.md
+  - 🎵 Inbox:
+    - inbox/song-idee.md
+  - 🏛️ Politik:
+    - politik/losdemokratie.md
 
 theme:
   name: material
@@ -8,20 +36,20 @@ theme:
     text: Inter
     code: Fira Code
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: blue
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: blue
+      primary: deep purple
+      accent: amber
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
   features:
     - navigation.tabs
     - navigation.tabs.sticky

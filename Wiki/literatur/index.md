@@ -1,23 +1,14 @@
-# 📚 Literatur
+# 📚 Literatur & Kunst
 
-> *"Bücher sind Spiegel: Man sieht darin nur, was man bereits in sich trägt."*
+<div class="constellation-nav" markdown>
 
----
+## 🎭 RagnaMaria
+Ein literarisches Projekt — das erste Kapitel eines epischen Werks.
 
-## Konstellationen
-
-<div class="grid cards" markdown>
-
--   :material-book-open-page-variant: **RagnaMaria**
-    Ein Buch über das Becken als Fundament des Körpers — Warun wir Symptome statt Ursachen behandeln.
-    [Kapitel 1: Das Becken, das alles bestimmt](ragnamaria/kapitel-01.md)
+**[→ Zu RagnaMaria Kapitel 1](ragnamaria/kapitel-01.md)**
 
 </div>
 
 ---
 
-## Bibliothek
-
-| Werk | Autor | Status | Genre |
-|------|-------|--------|-------|
-| **RagnaMaria** | — | Entwurf | Gesundheit, Körperarbeit |
+*"Geschichten sind die Sternenkarten der Seele."* ✨
