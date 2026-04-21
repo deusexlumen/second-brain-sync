@@ -191,7 +191,7 @@ Moderne Psychologie interpretiert die salomonische Magie als:
 - *Testament Salomos* (Frühchristlich)
 
 **Moderne Analysen:**
-- [Salomonische Magie Analyse (PDF)](../assets/pdfs/salomonische-magie-analyse.pdf)
+- [Salomonische Magie Analyse (PDF)](../../assets/pdfs/salomonische-magie-analyse.pdf)
 - Various academic studies on medieval grimoires
 
 ---
