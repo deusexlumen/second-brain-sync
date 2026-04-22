@@ -1,23 +1,17 @@
-# ✨ Magie & Okkultismus
-
-<div class="constellation-nav" markdown>
-
-## 🌟 Arbatel Magie System
-Das *Arbatel de Magia Veterum* ist ein klassisches Grimoire der Renaissance-Magie. Hier findest du die vollständige Analyse mit Bildern und dem Original-PDF.
-
-**[→ Zum Arbatel Magie System](arbatel-magie-system.md)**
-
 ---
+aliases: [Magie, Okkultismus, Arbatel, Salomonisch]
+tags: [#Navigation, #Magie, #Okkultismus]
+date_added: 2026-04-22
 type: navigation
-
-## 🔮 Salomonische Magie
-Eine tiefe Analyse der salomonischen Magietraditionen — mit Original-Dokumenten und Bildmaterial aus historischen Quellen.
-
-**[→ Zur Salomonischen Magie](salomonische-magie/index.md)**
-
-</div>
-
 ---
-type: navigation
+# Magie & Okkultismus
 
-*"Das Wissen der Alten ist kein Mythos — es ist ein Schlüssel."* 🔑
+## Zettel
+
+- **[[arbatel-magie-system]]** — Arbatel de Magia Veterum (Navigation)
+- **[[salomonische-magie/index|Salomonische Magie]]** — Goetia, Lemegeton
+
+## Zugehörige Konstellationen
+
+- **[[esoterik-okkultismus/index|Esoterik & Okkultismus]]** — Grimoires, spirituelle Systeme
+- **[[paranormal/index|Paranormal & Geheimdienste]]** — Bewusstseinsforschung

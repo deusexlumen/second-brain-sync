@@ -1,12 +1,16 @@
+---
+aliases: [Spiritualität, Philosophie, Zen, Watts]
+tags: [#Navigation, #Spiritualität, #Philosophie]
+date_added: 2026-04-22
+type: navigation
+---
 # Spiritualität & Philosophie
 
-> *Weg vom Denken, hin zum Sein.*
+## Zettel
 
----
-type: navigation
+- **[[watts-zen-nicht-dualitaet]]** — Zen & Nicht-Dualität nach Alan Watts
 
-## Einträge
+## Zugehörige Konstellationen
 
-- **Alan Watts — Der Weg des Zen**  
-  Zen-Buddhismus für den Westen. Meditation, Koan, Satori, Wu Wei.  
-  [→ Zum Eintrag](alan-watts-der-weg-des-zen.md)
+- **[[esoterik-okkultismus/index|Esoterik & Okkultismus]]** — Spirituelle Praktiken, Energiearbeit
+- **[[geschichte-mythologie/index|Geschichte & Mythologie]]** — Mythen, archetypische Muster

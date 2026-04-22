@@ -8,11 +8,13 @@ type: navigation
 
 Das **Arbatel de Magia Veterum** ist eines der einflussreichsten Grimoires der westlichen Esoterik. Geschrieben in der Renaissance, vereint es christliche Mystik, hermetische Philosophie und praktische Magie.
 
-## Dokumente
+## Atomare Zettel
 
-- **[[arbatel-doku|Vollständige Analyse]]** — Detaillierte Dokumentation des Systems
-- **Original PDF:** `Wiki/assets/pdfs/arbatel-magie-system.pdf`
-- **Arbatel Raw PDF:** `Wiki/assets/pdfs/arbatel-raw.pdf`
+- **[[arbatel-aeltestes-grimoire-ethik]]** — Ältestes Grimoire & Ethik-System
+- **[[arbatel-hierarchie]]** — Hierarchie der Olympischen Geister & Könige
+- **[[arbatel-ritual-protokoll]]** — Ritual-Protokoll & Praktische Anwendung
+- **[[arbatel-sigel-herstellung]]** — Sigel-Herstellung & Thebanisches Alphabet
+- **[[arbatel-zirkel-struktur]]** — 32-Richtungen-Zirkel & Geographisches System
 
 ## Bildmaterial
 
@@ -20,9 +22,7 @@ Das **Arbatel de Magia Veterum** ist eines der einflussreichsten Grimoires der w
 
 ## Zugehörige Zettel
 
-- [[arbatel-doku]] — Atomare Analyse des Arbatel-Systems
 - [[grimoire-tradition-technisches-handbuch]] — Technisches Handbuch der Grimoire-Tradition
-- [[grimoire-sammlung-ueberblick]] — Überblick über die Grimoire-Sammlung
 
 > *"Die sieben Olympischen Geister wachen über das Wissen der Welt."*
 

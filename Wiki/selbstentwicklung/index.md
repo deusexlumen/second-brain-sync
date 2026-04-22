@@ -1,24 +1,21 @@
-# Selbstentwicklung & Produktivität
-
-> *Weniger Ego. Mehr Substanz. Die Kunst, zu tun.*
-
 ---
+aliases: [Selbstentwicklung, Tracy, Newport, Holiday, Gilbert]
+tags: [#Navigation, #Selbstentwicklung]
+date_added: 2026-04-22
 type: navigation
+---
+# Selbstentwicklung
 
-## Einträge
+## Zettel
 
-- **Cal Newport — Digital Minimalism**  
-  Declutter your digital life. Analoge Praktiken, solitude deprivation.  
-  [→ Zum Eintrag](cal-newport-digital-minimalism.md)
+- **[[tracy-mentale-gesetze]]** — Mentale Gesetze & Erfolgsmechanik
+- **[[tracy-blockaden-vergebung-selbstwert]]** — Blockaden, Vergebung & Selbstwert
+- **[[newport-digital-minimalismus-philosophie]]** — Digital Minimalismus: Philosophie
+- **[[newport-digital-declutter-praxis]]** — Digital Declutter: 30-Tage-Praxis
+- **[[holiday-ego-stoizismus]]** — Ego is the Enemy: Stoizismus
+- **[[gilbert-big-magic-kreativitaet]]** — Big Magic: Kreativität ohne Angst
 
-- **Brian Tracy — Believe It to Achieve It**  
-  Selbstvertrauen, Zielsetzung, Gewohnheitsbildung.  
-  [→ Zum Eintrag](brian-tracy-believe.md)
+## Zugehörige Konstellationen
 
-- **Elizabeth Gilbert — Big Magic**  
-  Kreativität ohne Angst. Inspiration, Ideen als lebendige Entitäten.  
-  [→ Zum Eintrag](elizabeth-gilbert-big-magic.md)
-
-- **Ryan Holiday — Ego Is the Enemy**  
-  Stoizismus für die Moderne. Aspire → Success → Failure.  
-  [→ Zum Eintrag](ryan-holiday-ego-is-the-enemy.md)
+- **[[psyche-kognition/index|Psyche & Kognition]]** — Mentale Methoden, kognitive Architektur
+- **[[technologie/index|Technologie & KI]]** — Digitale Lebensgestaltung

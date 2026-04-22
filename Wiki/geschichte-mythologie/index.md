@@ -1,12 +1,16 @@
+---
+aliases: [Geschichte, Mythologie, Julfest, Rauhnächte]
+tags: [#Navigation, #Geschichte, #Mythologie]
+date_added: 2026-04-22
+type: navigation
+---
 # Geschichte & Mythologie
 
-> *Was wir glauben, wer wir waren — und was wir feiern.*
+## Zettel
 
----
-type: navigation
+- **[[julfest-wintersonnenwende]]** — Julfest & Wintersonnenwende
+- **[[raunaechte-schwellenzeit]]** — Rauhnächte als Schwellenzeit
 
-## Einträge
+## Zugehörige Konstellationen
 
-- **Julfest & Rauhnächte**  
-  Ursprünge, germanische Tradition, 12 heilige Nächte, Bräuche.  
-  [→ Zum Eintrag](julfest-raunaechte.md)
+- **[[esoterik-okkultismus/index|Esoterik & Okkultismus]]** — Jahreskreisfeste, spirituelle Traditionen

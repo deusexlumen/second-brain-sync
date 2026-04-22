@@ -1,23 +1,18 @@
-# 👁️ Paranormal & Geheimdienste
-
-<div class="constellation-nav" markdown>
-
-## 🛸 CIA Gateway Workbook
-Das berühmte CIA-Gateway-Dokument zur Bewusstseinsforschung. Ein technischer Bericht über außersinnliche Wahrnehmung und Bewusstseinszustände.
-
-**[→ Zum CIA Gateway Workbook](cia-gateway-workbook.md)**
-
 ---
+aliases: [Paranormal, CIA, Gateway, UAP]
+tags: [#Navigation, #Paranormal, #UAP]
+date_added: 2026-04-22
 type: navigation
-
-## 🌌 1764 German Sky Phenomena
-Historische Dokumentation ungewöhnlicher Himmelserscheinungen aus dem Jahr 1764 in Deutschland.
-
-**[→ Zu den Sky Phenomena](1764-german-sky-phenomena.md)**
-
-</div>
-
 ---
-type: navigation
+# Paranormal & Geheimdienste
 
-*"Die Wahrheit ist oft seltsamer als Fiktion."* 🌠
+## Zettel
+
+- **[[cia-gateway-bewusstseinszustaende]]** — CIA Gateway: Bewusstseinszustände durch Hemisphärensynchronisation
+- **[[cia-gateway-workbook]]** — CIA Gateway Workbook (Navigation & Archiv)
+- **[[1764-himmelsphaenomene-bamberg]]** — Historische Himmelsphänomene über Bamberg (1764)
+
+## Zugehörige Konstellationen
+
+- **[[technologie/index|Technologie & KI]]** — Bewusstseins-Technologie, Neuroforschung
+- **[[magie/index|Magie & Okkultismus]]** — Rituelle Bewusstseinszustände

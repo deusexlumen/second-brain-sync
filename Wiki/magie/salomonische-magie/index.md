@@ -1,31 +1,15 @@
-# 🔮 Salomonische Magie
-
-<div class="salomon-header" markdown>
-
-Eine tiefe Analyse der salomonischen Magietradition — mit Original-Dokumenten und historischem Bildmaterial.
-
-</div>
-
 ---
+aliases: [Salomonisch, Goetia, Lemegeton, Zwang]
+tags: [#Navigation, #Salomonisch, #Goetia]
+date_added: 2026-04-22
 type: navigation
-
-## 📄 Dokumente
-
-- **[Analyse-PDF herunterladen](../../assets/pdfs/salomonische-magie-analyse.pdf)**
-
 ---
-type: navigation
+# Salomonische Magie
 
-## 🖼️ Bildmaterial
+## Zettel
 
-<div class="image-grid" markdown>
+- **[[salomonische-magie-zwang]]** — Zwang & hierarchische Kontrolle in der Salomonischen Tradition
 
-![Salomonisch 1](../../assets/images/salomonisch-01.jpg)
-![Salomonisch 2](../../assets/images/salomonisch-02.jpg)
+## Zugehörige Konstellationen
 
-</div>
-
----
-type: navigation
-
-*"Salomons Schlüssel öffnet Türen, die besser verschlossen bleiben."* 🗝️
+- **[[arbatel-magie-system]]** — Arbatel: kooperative Magie (Gegensatz zur Salomonischen Zwangsmagie)

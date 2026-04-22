@@ -1,20 +1,20 @@
-# Politik & Gesellschaft
-
-> *Medien, Wahrheit, Macht — und wer sie kontrolliert.*
-
 ---
+aliases: [Politik, Geopolitik, Demokratie, Kissinger]
+tags: [#Navigation, #Politik, #Geopolitik]
+date_added: 2026-04-22
 type: navigation
+---
+# Politik
 
-## Einträge
+## Zettel
 
-- **Steven Brill — The Death of Truth**  
-  Fakten vs. Meinungen, Section 230, Filterblasen.  
-  [→ Zum Eintrag](steven-brill-death-of-truth.md)
+- **[[kissinger-nssm200-bevoelkerungskontrolle]]** — NSSM 200: Bevölkerungskontroll-Strategie
+- **[[losdemokratie]]** — Losdemokratie: Politiker durch Zufallsauswahl
+- **[[brill-wahrheitszerstoerung-algorithmen]]** — Algorithmen & die Zerstörung der Wahrheit
+- **[[brill-wiederbelebung-wahrheit-reformen]]** — Wiederbelebung der Wahrheit: Reformen
+- **[[fascismus-politische-religion]]** — Faschismus als politische Religion
 
-- **Henry Kissinger — NSSM 200 & Bevölkerungskontrolle**  
-  1974. Geheime Depopulations-Agenda.  
-  [→ Zum Eintrag](kissinger-nssm200-bevolkerungskontrolle.md)
+## Zugehörige Konstellationen
 
-- **Kevin Passmore — Fascism: A Very Short Introduction**  
-  2002. "A und nicht A"-Konzept, moderne Parallelen.  
-  [→ Zum Eintrag](fascism-very-short-introduction.md)
+- **[[politik-libertarismus/index|Politik & Libertarismus]]** — Eigentum, Anarchie, Staatskritik
+- **[[verschwoerungen-alternatives/index|Verschwörungen & Alternatives]]** — Geopolitik, alternative Narrative

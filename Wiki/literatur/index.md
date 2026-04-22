@@ -1,15 +1,15 @@
-# 📚 Literatur & Kunst
-
-<div class="constellation-nav" markdown>
-
-## 🎭 RagnaMaria
-Ein literarisches Projekt — das erste Kapitel eines epischen Werks.
-
-**[→ Zu RagnaMaria Kapitel 1](ragnamaria/kapitel-01.md)**
-
-</div>
-
 ---
+aliases: [Literatur, RagnaMaria, Kunst]
+tags: [#Navigation, #Literatur, #Kunst]
+date_added: 2026-04-22
 type: navigation
+---
+# Literatur & Kunst
 
-*"Geschichten sind die Sternenkarten der Seele."* ✨
+## Zettel
+
+- **[[ragnamaria/kapitel-01|Ragna Maria — Kapitel 1]]** — Das Becken, das alles bestimmt
+
+## Zugehörige Konstellationen
+
+- **[[psyche-kognition/index|Psyche & Kognition]]** — Kreative Kognition
