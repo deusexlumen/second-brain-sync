@@ -8,6 +8,21 @@ type: navigation
 
 > *Wie wir denken. Warum wir handeln. Wer uns manipuliert.*
 
+- **[[luhmann-systemtheorie-grundlagen|Niklas Luhmann — Systemtheorie (Grundlagen)]]**
+  Autopoiesis, funktionale Differenzierung, Kommunikation als einziges Element sozialer Systeme.
+
+- **[[luhmann-funktionssysteme|Niklas Luhmann — Funktionssysteme]]**
+  Politik, Wirtschaft, Recht, Wissenschaft — Codes, Medien, operative Geschlossenheit.
+
+- **[[luhmann-epistemologie-beobachtung|Niklas Luhmann — Epistemologie & Beobachtung]]**
+  Radikaler Konstruktivismus, Beobachter 1./2. Ordnung, Spencer-Brown, Sinn, Zeit.
+
+- **[[luhmann-kritik-rezeption|Niklas Luhmann — Kritik & Rezeption]]**
+  Habermas, Honneth, aktuelle Anwendungen, systemische Beratung, KI-Analyse.
+
+- **[[luhmann-interdisziplinaer|Niklas Luhmann — Interdisziplinäre Brücken]]**
+  Kybernetik, Biologie, KI, Netzwerke, Blockchain, Komplexitätswissenschaft.
+
 ## Einträge
 
 - **[[greene-oberflaeche-menschlicher-natur|Robert Greene — The Laws of Human Nature]]**
